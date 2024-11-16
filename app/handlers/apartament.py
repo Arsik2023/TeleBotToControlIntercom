@@ -1,5 +1,6 @@
-from aiogram import types
+from aiogram import types 
 from handlers.api_service import get_request
+from handlers.keyboards import create_apartment_keyboard , create_domofon_keyboard , create_main_menu_keyboard , create_back_keyboard
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 from aiogram import Dispatcher
 
@@ -17,10 +18,7 @@ async def select_apartament_handler(message:types.Message):
         await message.answer("У вас нет квартир. Пожалуйста, свяжитесь с администратором.")
         return
     
-    keyboard = ReplyKeyboardMarkup(resize_keyboard=True)
-    for zxc in response:
-        keyboard.add(KeyboardButton(text=f'{zxc["name"]}'))
-
+    keyboard = create_domofon_keyboard(response)
     await message.answer("Выберите квартиру:", reply_markup=keyboard)
     message.bot["apartmets"] = response
     

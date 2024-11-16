@@ -1,11 +1,9 @@
 from aiogram import types
 from handlers.api_service import post_request
+from handlers.keyboards import create_apartment_keyboard , create_domofon_keyboard , create_back_keyboard , create_main_menu_keyboard 
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 from aiogram import Dispatcher
 from handlers.api_service import get_request
-
-back_keyboard = ReplyKeyboardMarkup(resize_keyboard=True)
-back_keyboard.add(KeyboardButton('Назад'))
 
 async def get_domofons_by_apartment(apartment_id, tenant_id):
     endpoint = f"domo.apartment/{apartment_id}/domofon"
@@ -36,10 +34,7 @@ async def select_domofon_handler(message: types.Message):
         return
 
     # Формируем клавиатуру с домофонами
-    keyboard = ReplyKeyboardMarkup(resize_keyboard=True)
-    for domofon in domofons:
-        keyboard.add(KeyboardButton(text=f"Домофон {domofon['name']}"))
-
+    keyboard = create_domofon_keyboard(domofons)
     await message.answer("Выберите домофон:", reply_markup=keyboard)
     message.bot["selected_apartment_id"] = apartment_id
     message.bot["domofons"] = domofons
@@ -55,7 +50,7 @@ async def get_domofon_image_handler(message: types.Message):
     selected_apartment = next((a for a in apartments if a["name"] == apartment_name), None)
 
     if not selected_apartment:
-        await message.answer("Выбранная квартира не найдена. Попробуйте снова.", reply_markup=back_keyboard)
+        await message.answer("Выбранная квартира не найдена. Попробуйте снова.")
         return
 
     apartment_id = selected_apartment["id"]
@@ -92,7 +87,7 @@ async def get_domofon_image_handler(message: types.Message):
             if image_url:
                 await message.answer_photo(image_url, caption=f"Снимок с домофона {domofons[0]['name']}.")
             else:
-                await message.answer("Не удалось получить изображение.", reply_markup=back_keyboard)
+                await message.answer("Не удалось получить изображение.", reply_markup=create_back_keyboard)
 
             # Отправляем потоковые ссылки, если доступны
             if hls_url or rtsp_url:
@@ -104,7 +99,7 @@ async def get_domofon_image_handler(message: types.Message):
                 await message.answer("\n".join(streams))
     else:
         print("Ошибка при получении данных от API")
-        await message.answer("Ошибка при получении снимка с камеры.", reply_markup=back_keyboard)
+        await message.answer("Ошибка при получении снимка с камеры.", reply_markup=create_back_keyboard)
         
 
 # обработчик
@@ -113,4 +108,3 @@ def register_domofon_handler(dp: Dispatcher):
         get_domofon_image_handler,
         lambda message: message.text in [d["name"] for d in message.bot.get("domofons", [])]
     )
-
