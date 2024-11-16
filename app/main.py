@@ -9,7 +9,7 @@ from handlers.domofon import register_domofon_handler
 from handlers.open import register_open_door_handler
 
 
-TOKEN = "6594098314:AAG5KKwQfIeLKAgvXoFTeDKPbEgGbMK19qk"
+TOKEN = ""
 
 qwe = """
             (          

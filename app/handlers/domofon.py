@@ -2,28 +2,77 @@ from aiogram import types
 from handlers.api_service import post_request
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 from aiogram import Dispatcher
-
+from handlers.api_service import get_request
 
 back_keyboard = ReplyKeyboardMarkup(resize_keyboard=True)
 back_keyboard.add(KeyboardButton('Назад'))
 
+async def get_domofons_by_apartment(apartment_id, tenant_id):
+    endpoint = f"domo.apartment/{apartment_id}/domofon"
+    response = get_request(endpoint, params={"tenant_id": tenant_id})
+    return response
+
+async def select_domofon_handler(message: types.Message):
+    """
+    Обработчик выбора квартиры и получения списка домофонов.
+    """
+    print(f"[DEBUG] Обработчик вызван для выбора квартиры: {message.text}")
+    apartments = message.bot.get("apartments", [])
+    tenant_id = message.bot.get("tenant_id")
+
+    # Проверяем, выбрана ли квартира
+    selected_apartment_name = message.text.replace("Квартира ", "").strip()
+    selected_apartment = next((a for a in apartments if a["name"] == selected_apartment_name), None)
+
+    if not selected_apartment:
+        await message.answer("Квартира не найдена. Попробуйте снова.")
+        return
+
+    # Получаем список домофонов для выбранной квартиры
+    apartment_id = selected_apartment["id"]
+    domofons = get_domofons_by_apartment(apartment_id, tenant_id)
+    if not domofons or len(domofons) == 0:
+        await message.answer(f"Для квартиры {selected_apartment_name} нет доступных домофонов.")
+        return
+
+    # Формируем клавиатуру с домофонами
+    keyboard = ReplyKeyboardMarkup(resize_keyboard=True)
+    for domofon in domofons:
+        keyboard.add(KeyboardButton(text=f"Домофон {domofon['name']}"))
+
+    await message.answer("Выберите домофон:", reply_markup=keyboard)
+    message.bot["selected_apartment_id"] = apartment_id
+    message.bot["domofons"] = domofons
+
 # Обработчик для получения снимка с камеры епта сучка
 async def get_domofon_image_handler(message: types.Message):
     print(f"Обработчик вызван для: {message.text}")
-    domofons = message.bot.get("domofons", [])
+    apartments = message.bot.get("domofons", [])  # Список квартир
     tenant_id = message.bot.get("tenant_id")
-    domofon_name = message.text
+    apartment_name = message.text
 
-    # Проверяем, выбран ли домофон из доступных вариков
-    selected_domofon = next((d for d in domofons if d["name"] == domofon_name), None)
+    # Проверяем, выбрана ли квартира
+    selected_apartment = next((a for a in apartments if a["name"] == apartment_name), None)
 
-    if not selected_domofon:
-        await message.answer("Выбранный домофон не найден. Попробуйте снова.", reply_markup=back_keyboard)
+    if not selected_apartment:
+        await message.answer("Выбранная квартира не найдена. Попробуйте снова.", reply_markup=back_keyboard)
         return
 
-    # Запрос к API
+    apartment_id = selected_apartment["id"]
+
+    # Получаем список домофонов для квартиры
+    domofons = await get_domofons_by_apartment(apartment_id, tenant_id)
+
+    if not domofons or len(domofons) == 0:
+        await message.answer("Для этой квартиры нет доступных домофонов.")
+        return
+
+    # Используем ID первого домофона
+    domofon_id = domofons[0]["id"]
+
+    # Запрос к API для получения снимков
     data = {
-        "intercoms_id": [selected_domofon["id"]],
+        "intercoms_id": [domofon_id],
         "media_type": ["JPEG"]
     }
     response = post_request("domo.domofon/urlsOnType", data, params={"tenant_id": tenant_id})
@@ -31,17 +80,17 @@ async def get_domofon_image_handler(message: types.Message):
     if response:
         print("Ответ от API:", response)
         if len(response) == 0:  # Если API вернул пустой список
-            await message.answer(f"Для домофона {domofon_name} нет доступных снимков.")
+            await message.answer(f"Для домофона {domofons[0]['name']} нет доступных снимков.")
         else:
-            # Обрабатываем первый элемент нашего блядского ответа
+            # Обрабатываем первый элемент ответа
             result = response[0]
             image_url = result.get("jpeg", None)
             hls_url = result.get("hls", None)
             rtsp_url = result.get("rtsp", None)
 
-            # Отправляем изображение, если оно типа есть
+            # Отправляем изображение, если доступно
             if image_url:
-                await message.answer_photo(image_url, caption=f"Снимок с камеры {domofon_name}.")
+                await message.answer_photo(image_url, caption=f"Снимок с домофона {domofons[0]['name']}.")
             else:
                 await message.answer("Не удалось получить изображение.", reply_markup=back_keyboard)
 
@@ -56,6 +105,7 @@ async def get_domofon_image_handler(message: types.Message):
     else:
         print("Ошибка при получении данных от API")
         await message.answer("Ошибка при получении снимка с камеры.", reply_markup=back_keyboard)
+        
 
 # обработчик
 def register_domofon_handler(dp: Dispatcher):
@@ -63,3 +113,4 @@ def register_domofon_handler(dp: Dispatcher):
         get_domofon_image_handler,
         lambda message: message.text in [d["name"] for d in message.bot.get("domofons", [])]
     )
+

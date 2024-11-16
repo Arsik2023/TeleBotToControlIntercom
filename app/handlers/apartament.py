@@ -7,6 +7,23 @@ from aiogram import Dispatcher
 back_keyboard = ReplyKeyboardMarkup(resize_keyboard=True)
 back_keyboard.add(KeyboardButton('Назад'))
 
+async def select_apartament_handler(message:types.Message):
+    print("[DEBUG] Обработчик вызван для выбора квартиры")
+
+    tenant_id =  message.bot.get("tenant_id")
+    response = get_request("apartment", params={"tenant_id": tenant_id})
+
+    if not response or len(response) == 0:
+        await message.answer("У вас нет квартир. Пожалуйста, свяжитесь с администратором.")
+        return
+    
+    keyboard = ReplyKeyboardMarkup(resize_keyboard=True)
+    for zxc in response:
+        keyboard.add(KeyboardButton(text=f'{zxc["name"]}'))
+
+    await message.answer("Выберите квартиру:", reply_markup=keyboard)
+    message.bot["apartmets"] = response
+    
 # Функция для создания клавиатуры с домофонами
 def create_domofon_keyboard(domofons):
     keyboard = ReplyKeyboardMarkup(resize_keyboard=True)
