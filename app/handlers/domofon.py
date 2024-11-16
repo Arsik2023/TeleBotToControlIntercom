@@ -28,7 +28,13 @@ async def select_domofon_handler(message: types.Message):
 
     # Получаем список домофонов для выбранной квартиры
     apartment_id = selected_apartment["id"]
-    domofons = get_domofons_by_apartment(apartment_id, tenant_id)
+    try:
+        domofons = await get_domofons_by_apartment(apartment_id, tenant_id)
+    except Exception as e:
+        print(f"[ERROR] Не удалось получить список домофонов: {e}")
+        await message.answer("Произошла ошибка при получении списка домофонов. Попробуйте позже.")
+        return
+
     if not domofons or len(domofons) == 0:
         await message.answer(f"Для квартиры {selected_apartment_name} нет доступных домофонов.")
         return
@@ -38,7 +44,7 @@ async def select_domofon_handler(message: types.Message):
     await message.answer("Выберите домофон:", reply_markup=keyboard)
     message.bot["selected_apartment_id"] = apartment_id
     message.bot["domofons"] = domofons
-
+    
 # Обработчик для получения снимка с камеры епта сучка
 async def get_domofon_image_handler(message: types.Message):
     print(f"Обработчик вызван для: {message.text}")
