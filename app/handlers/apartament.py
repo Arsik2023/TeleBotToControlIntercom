@@ -17,7 +17,7 @@ logging.basicConfig(
 
 logger = logging.getLogger(__name__)
 
-# Клавиатура для возврата
+# Клавиатура для возвратаВыб
 back_keyboard = ReplyKeyboardMarkup(resize_keyboard=True)
 back_keyboard.add(KeyboardButton('Назад'))
 
@@ -32,7 +32,7 @@ async def select_apartament_handler(message:types.Message):
         return
     
     keyboard = create_domofon_keyboard(response)
-    await message.answer("Выберите квартиру:", reply_markup=keyboard)
+    await message.answer("ерите квартиру:", reply_markup=keyboard)
     message.bot["apartmets"] = response
     
 # Функция для создания клавиатуры с домофонами
