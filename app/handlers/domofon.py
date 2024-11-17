@@ -114,3 +114,4 @@ def register_domofon_handler(dp: Dispatcher):
         get_domofon_image_handler,
         lambda message: message.text in [d["name"] for d in message.bot.get("domofons", [])]
     )
+    

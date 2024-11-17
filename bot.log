@@ -750,3 +750,666 @@
 2024-11-16 22:37:35,068 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555162, 'timeout': 20}" and files "None"
 2024-11-16 22:37:36,658 - aiogram.dispatcher.dispatcher - INFO - Stop polling...
 2024-11-16 22:37:36,660 - aiogram - WARNING - Goodbye!
+2024-11-17 06:27:21,591 - asyncio - DEBUG - Using proactor: IocpProactor
+2024-11-17 06:27:21,591 - aiogram - DEBUG - Make request: "getMe" with data: "{}" and files "None"
+2024-11-17 06:27:21,941 - aiogram - DEBUG - Response for getMe: [200] "'{"ok":true,"result":{"id":7317252711,"is_bot":true,"first_name":"TeleBotToControlIntercom","username":"TeleBotToControlIntercombot","can_join_groups":true,"can_read_all_group_messages":false,"supports_inline_queries":false,"can_connect_to_business":false,"has_main_web_app":false}}'"
+2024-11-17 06:27:21,941 - aiogram - INFO - Bot: TeleBotToControlIntercom [@TeleBotToControlIntercombot]
+2024-11-17 06:27:21,941 - aiogram - DEBUG - Make request: "getWebhookInfo" with data: "{}" and files "None"
+2024-11-17 06:27:22,052 - aiogram - DEBUG - Response for getWebhookInfo: [200] "'{"ok":true,"result":{"url":"","has_custom_certificate":false,"pending_update_count":0}}'"
+2024-11-17 06:27:22,052 - aiogram - DEBUG - Make request: "deleteWebhook" with data: "{'drop_pending_updates': True}" and files "None"
+2024-11-17 06:27:22,243 - aiogram - DEBUG - Response for deleteWebhook: [200] "'{"ok":true,"result":true,"description":"Webhook is already deleted"}'"
+2024-11-17 06:27:22,243 - aiogram - WARNING - Updates were skipped successfully.
+2024-11-17 06:27:22,259 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2024-11-17 06:27:22,259 - aiogram - DEBUG - Make request: "getWebhookInfo" with data: "{}" and files "None"
+2024-11-17 06:27:22,350 - aiogram - DEBUG - Response for getWebhookInfo: [200] "'{"ok":true,"result":{"url":"","has_custom_certificate":false,"pending_update_count":0}}'"
+2024-11-17 06:27:22,350 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'timeout': 20}" and files "None"
+2024-11-17 06:27:26,865 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[{"update_id":250555200,\n"message":{"message_id":472,"from":{"id":2113637494,"is_bot":false,"first_name":"0xFk","username":"dxqxxx","language_code":"ru"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731824847,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}]}'"
+2024-11-17 06:27:26,869 - aiogram.dispatcher.dispatcher - DEBUG - Received 1 updates.
+2024-11-17 06:27:26,871 - aiogram - DEBUG - Make request: "sendMessage" with data: "{'chat_id': 2113637494, 'text': 'Добро пожаловать! Отправьте ваш контакт для авторизации.', 'reply_markup': '{"keyboard": [[{"text": "Отправить контакт", "request_contact": true}]], "resize_keyboard": true}'}" and files "None"
+2024-11-17 06:27:26,972 - aiogram - DEBUG - Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":473,"from":{"id":7317252711,"is_bot":true,"first_name":"TeleBotToControlIntercom","username":"TeleBotToControlIntercombot"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731824847,"text":"\\u0414\\u043e\\u0431\\u0440\\u043e \\u043f\\u043e\\u0436\\u0430\\u043b\\u043e\\u0432\\u0430\\u0442\\u044c! \\u041e\\u0442\\u043f\\u0440\\u0430\\u0432\\u044c\\u0442\\u0435 \\u0432\\u0430\\u0448 \\u043a\\u043e\\u043d\\u0442\\u0430\\u043a\\u0442 \\u0434\\u043b\\u044f \\u0430\\u0432\\u0442\\u043e\\u0440\\u0438\\u0437\\u0430\\u0446\\u0438\\u0438."}}'"
+2024-11-17 06:27:26,974 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555201, 'timeout': 20}" and files "None"
+2024-11-17 06:27:30,786 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[{"update_id":250555201,\n"message":{"message_id":474,"from":{"id":2113637494,"is_bot":false,"first_name":"0xFk","username":"dxqxxx","language_code":"ru"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731824851,"reply_to_message":{"message_id":473,"from":{"id":7317252711,"is_bot":true,"first_name":"TeleBotToControlIntercom","username":"TeleBotToControlIntercombot"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731824847,"text":"\\u0414\\u043e\\u0431\\u0440\\u043e \\u043f\\u043e\\u0436\\u0430\\u043b\\u043e\\u0432\\u0430\\u0442\\u044c! \\u041e\\u0442\\u043f\\u0440\\u0430\\u0432\\u044c\\u0442\\u0435 \\u0432\\u0430\\u0448 \\u043a\\u043e\\u043d\\u0442\\u0430\\u043a\\u0442 \\u0434\\u043b\\u044f \\u0430\\u0432\\u0442\\u043e\\u0440\\u0438\\u0437\\u0430\\u0446\\u0438\\u0438."},"contact":{"phone_number":"+79126991141","first_name":"0xFk","user_id":2113637494}}}]}'"
+2024-11-17 06:27:30,789 - aiogram.dispatcher.dispatcher - DEBUG - Received 1 updates.
+2024-11-17 06:27:30,797 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): domo-dev.profintel.ru:443
+2024-11-17 06:27:31,258 - urllib3.connectionpool - DEBUG - https://domo-dev.profintel.ru:443 "POST /tg-bot/check-tenant HTTP/1.1" 200 19
+2024-11-17 06:27:31,315 - aiogram - DEBUG - Make request: "sendMessage" with data: "{'chat_id': 2113637494, 'text': 'Авторизация успешна! Ваш tenant_id: 22084.', 'reply_markup': '{"keyboard": [[{"text": "Показать домофоны"}]], "resize_keyboard": true}'}" and files "None"
+2024-11-17 06:27:31,315 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555202, 'timeout': 20}" and files "None"
+2024-11-17 06:27:31,474 - aiogram - DEBUG - Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":475,"from":{"id":7317252711,"is_bot":true,"first_name":"TeleBotToControlIntercom","username":"TeleBotToControlIntercombot"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731824851,"text":"\\u0410\\u0432\\u0442\\u043e\\u0440\\u0438\\u0437\\u0430\\u0446\\u0438\\u044f \\u0443\\u0441\\u043f\\u0435\\u0448\\u043d\\u0430! \\u0412\\u0430\\u0448 tenant_id: 22084."}}'"
+2024-11-17 06:27:33,317 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[{"update_id":250555202,\n"message":{"message_id":476,"from":{"id":2113637494,"is_bot":false,"first_name":"0xFk","username":"dxqxxx","language_code":"ru"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731824853,"text":"\\u041f\\u043e\\u043a\\u0430\\u0437\\u0430\\u0442\\u044c \\u0434\\u043e\\u043c\\u043e\\u0444\\u043e\\u043d\\u044b"}}]}'"
+2024-11-17 06:27:33,321 - aiogram.dispatcher.dispatcher - DEBUG - Received 1 updates.
+2024-11-17 06:27:33,324 - handlers.apartament - INFO - [LIST_DOMOFONS] Обработчик вызван. Пользователь: dxqxxx
+2024-11-17 06:27:33,325 - handlers.apartament - DEBUG - [LIST_DOMOFONS] Tenant ID из message.bot: 22084
+2024-11-17 06:27:33,325 - handlers.apartament - INFO - [LIST_DOMOFONS] Отправляем запрос к API для tenant_id: 22084
+2024-11-17 06:27:33,332 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): domo-dev.profintel.ru:443
+2024-11-17 06:27:33,622 - urllib3.connectionpool - DEBUG - https://domo-dev.profintel.ru:443 "GET /tg-bot/domo.apartment?tenant_id=22084 HTTP/1.1" 200 1175
+2024-11-17 06:27:33,629 - handlers.apartament - DEBUG - [LIST_DOMOFONS] Ответ от API: [{'id': 757, 'name': '3', 'location': {'id': 755, 'fias_uuid': '9555c7f6-1487-45ac-b942-1c7df2ed9d42', 'readable_address': 'ул. Стахановская д. 43а', 'readable_address_lk': 'ул. Стахановская, дом 43', 'address_alias': None, 'porch': None, 'gate': None, 'floor': None, 'other': None, 'apartments_number': '3'}, 'paid_before': None, 'operation_status': 200, 'type': None, 'tenants': [{'id': 62, 'name': 'Пинаев Андрей Степанович', 'timezone': 'UTC+5', 'phone': '79088830608', 'alias_name': None, 'status': {'operation_status': 200, 'role': 100, 'displayed': True}}, {'id': 859, 'name': 'А', 'timezone': 'UTC+5', 'phone': '79827279691', 'alias_name': None, 'status': {'operation_status': 200, 'role': 300, 'displayed': True}}, {'id': 860, 'name': 'Анастасия ', 'timezone': 'UTC+5', 'phone': '79224477430', 'alias_name': None, 'status': {'operation_status': 200, 'role': 300, 'displayed': True}}, {'id': 22084, 'name': 'DoubleRR', 'timezone': None, 'phone': '79126991141', 'alias_name': None, 'status': {'operation_status': 200, 'role': 100, 'displayed': True}}, {'id': 22086, 'name': 'DoubleRR', 'timezone': None, 'phone': '79049818179', 'alias_name': None, 'status': {'operation_status': 200, 'role': 100, 'displayed': True}}]}]
+2024-11-17 06:27:33,632 - handlers.apartament - INFO - [LIST_DOMOFONS] Найдено 1 домофонов.
+2024-11-17 06:27:33,634 - aiogram - DEBUG - Make request: "sendMessage" with data: "{'chat_id': 2113637494, 'text': 'Выберите домофон:', 'reply_markup': '{"keyboard": [[{"text": "3"}]], "resize_keyboard": true}'}" and files "None"
+2024-11-17 06:27:33,637 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555203, 'timeout': 20}" and files "None"
+2024-11-17 06:27:33,930 - aiogram - DEBUG - Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":477,"from":{"id":7317252711,"is_bot":true,"first_name":"TeleBotToControlIntercom","username":"TeleBotToControlIntercombot"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731824854,"text":"\\u0412\\u044b\\u0431\\u0435\\u0440\\u0438\\u0442\\u0435 \\u0434\\u043e\\u043c\\u043e\\u0444\\u043e\\u043d:"}}'"
+2024-11-17 06:27:35,979 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[{"update_id":250555203,\n"message":{"message_id":478,"from":{"id":2113637494,"is_bot":false,"first_name":"0xFk","username":"dxqxxx","language_code":"ru"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731824856,"text":"3"}}]}'"
+2024-11-17 06:27:35,982 - aiogram.dispatcher.dispatcher - DEBUG - Received 1 updates.
+2024-11-17 06:27:35,989 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): domo-dev.profintel.ru:443
+2024-11-17 06:27:36,571 - urllib3.connectionpool - DEBUG - https://domo-dev.profintel.ru:443 "GET /tg-bot/domo.apartment/757/domofon?tenant_id=22084 HTTP/1.1" 200 6995
+2024-11-17 06:27:36,597 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): domo-dev.profintel.ru:443
+2024-11-17 06:27:37,106 - urllib3.connectionpool - DEBUG - https://domo-dev.profintel.ru:443 "POST /tg-bot/domo.domofon/urlsOnType?tenant_id=22084 HTTP/1.1" 200 236
+2024-11-17 06:27:37,113 - aiogram - DEBUG - Make request: "sendPhoto" with data: "{'chat_id': 2113637494, 'caption': 'Снимок с домофона Подъезд со стороны двора.', 'photo': 'https://cctv-streamer-12.profintel.ru/snapshot/image.jpg?st=qMSvFTNGYeCsFiGfZQwt_g&e=1732022857&id=11274'}" and files "{}"
+2024-11-17 06:27:37,116 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555204, 'timeout': 20}" and files "None"
+2024-11-17 06:27:38,116 - aiogram - DEBUG - Response for sendPhoto: [200] "'{"ok":true,"result":{"message_id":479,"from":{"id":7317252711,"is_bot":true,"first_name":"TeleBotToControlIntercom","username":"TeleBotToControlIntercombot"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731824858,"photo":[{"file_id":"AgACAgQAAxkDAAIB32c5jNoaTA3_gy5eQqESudXKLmWXAAKTtjEbJTLVUdDEQeqib3f6AQADAgADcwADNgQ","file_unique_id":"AQADk7YxGyUy1VF4","file_size":677,"width":90,"height":51},{"file_id":"AgACAgQAAxkDAAIB32c5jNoaTA3_gy5eQqESudXKLmWXAAKTtjEbJTLVUdDEQeqib3f6AQADAgADbQADNgQ","file_unique_id":"AQADk7YxGyUy1VFy","file_size":8359,"width":320,"height":180},{"file_id":"AgACAgQAAxkDAAIB32c5jNoaTA3_gy5eQqESudXKLmWXAAKTtjEbJTLVUdDEQeqib3f6AQADAgADeAADNgQ","file_unique_id":"AQADk7YxGyUy1VF9","file_size":38181,"width":800,"height":450},{"file_id":"AgACAgQAAxkDAAIB32c5jNoaTA3_gy5eQqESudXKLmWXAAKTtjEbJTLVUdDEQeqib3f6AQADAgADeQADNgQ","file_unique_id":"AQADk7YxGyUy1VF-","file_size":38465,"width":1280,"height":720}],"caption":"\\u0421\\u043d\\u0438\\u043c\\u043e\\u043a \\u0441 \\u0434\\u043e\\u043c\\u043e\\u0444\\u043e\\u043d\\u0430 \\u041f\\u043e\\u0434\\u044a\\u0435\\u0437\\u0434 \\u0441\\u043e \\u0441\\u0442\\u043e\\u0440\\u043e\\u043d\\u044b \\u0434\\u0432\\u043e\\u0440\\u0430."}}'"
+2024-11-17 06:27:57,272 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:27:57,382 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555204, 'timeout': 20}" and files "None"
+2024-11-17 06:28:17,550 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:28:17,665 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555204, 'timeout': 20}" and files "None"
+2024-11-17 06:28:37,814 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:28:37,932 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555204, 'timeout': 20}" and files "None"
+2024-11-17 06:28:58,099 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:28:58,209 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555204, 'timeout': 20}" and files "None"
+2024-11-17 06:29:18,369 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:29:18,484 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555204, 'timeout': 20}" and files "None"
+2024-11-17 06:29:38,570 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:29:38,682 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555204, 'timeout': 20}" and files "None"
+2024-11-17 06:29:58,805 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:29:58,919 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555204, 'timeout': 20}" and files "None"
+2024-11-17 06:30:19,024 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:30:19,135 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555204, 'timeout': 20}" and files "None"
+2024-11-17 06:30:39,279 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:30:39,386 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555204, 'timeout': 20}" and files "None"
+2024-11-17 06:30:59,474 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:30:59,578 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555204, 'timeout': 20}" and files "None"
+2024-11-17 06:31:19,677 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:31:19,781 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555204, 'timeout': 20}" and files "None"
+2024-11-17 06:31:39,900 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:31:40,002 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555204, 'timeout': 20}" and files "None"
+2024-11-17 06:32:00,093 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:32:00,207 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555204, 'timeout': 20}" and files "None"
+2024-11-17 06:32:20,351 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:32:20,452 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555204, 'timeout': 20}" and files "None"
+2024-11-17 06:32:40,539 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:32:40,640 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555204, 'timeout': 20}" and files "None"
+2024-11-17 06:32:55,477 - aiogram.dispatcher.dispatcher - INFO - Stop polling...
+2024-11-17 06:32:55,478 - aiogram - WARNING - Goodbye!
+2024-11-17 06:33:04,315 - asyncio - DEBUG - Using proactor: IocpProactor
+2024-11-17 06:33:04,317 - aiogram - DEBUG - Make request: "getMe" with data: "{}" and files "None"
+2024-11-17 06:33:04,695 - aiogram - DEBUG - Response for getMe: [200] "'{"ok":true,"result":{"id":7317252711,"is_bot":true,"first_name":"TeleBotToControlIntercom","username":"TeleBotToControlIntercombot","can_join_groups":true,"can_read_all_group_messages":false,"supports_inline_queries":false,"can_connect_to_business":false,"has_main_web_app":false}}'"
+2024-11-17 06:33:04,696 - aiogram - INFO - Bot: TeleBotToControlIntercom [@TeleBotToControlIntercombot]
+2024-11-17 06:33:04,697 - aiogram - DEBUG - Make request: "getWebhookInfo" with data: "{}" and files "None"
+2024-11-17 06:33:04,792 - aiogram - DEBUG - Response for getWebhookInfo: [200] "'{"ok":true,"result":{"url":"","has_custom_certificate":false,"pending_update_count":0}}'"
+2024-11-17 06:33:04,793 - aiogram - DEBUG - Make request: "deleteWebhook" with data: "{'drop_pending_updates': True}" and files "None"
+2024-11-17 06:33:04,875 - aiogram - DEBUG - Response for deleteWebhook: [200] "'{"ok":true,"result":true,"description":"Webhook is already deleted"}'"
+2024-11-17 06:33:04,876 - aiogram - WARNING - Updates were skipped successfully.
+2024-11-17 06:33:04,876 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2024-11-17 06:33:04,877 - aiogram - DEBUG - Make request: "getWebhookInfo" with data: "{}" and files "None"
+2024-11-17 06:33:04,997 - aiogram - DEBUG - Response for getWebhookInfo: [200] "'{"ok":true,"result":{"url":"","has_custom_certificate":false,"pending_update_count":0}}'"
+2024-11-17 06:33:04,998 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'timeout': 20}" and files "None"
+2024-11-17 06:33:10,355 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[{"update_id":250555204,\n"message":{"message_id":480,"from":{"id":2113637494,"is_bot":false,"first_name":"0xFk","username":"dxqxxx","language_code":"ru"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731825190,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}]}'"
+2024-11-17 06:33:10,356 - aiogram.dispatcher.dispatcher - DEBUG - Received 1 updates.
+2024-11-17 06:33:10,357 - aiogram - DEBUG - Make request: "sendMessage" with data: "{'chat_id': 2113637494, 'text': 'Добро пожаловать! Отправьте ваш контакт для авторизации.', 'reply_markup': '{"keyboard": [[{"text": "Отправить контакт", "request_contact": true}]], "resize_keyboard": true}'}" and files "None"
+2024-11-17 06:33:10,470 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555205, 'timeout': 20}" and files "None"
+2024-11-17 06:33:10,471 - aiogram - DEBUG - Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":481,"from":{"id":7317252711,"is_bot":true,"first_name":"TeleBotToControlIntercom","username":"TeleBotToControlIntercombot"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731825190,"text":"\\u0414\\u043e\\u0431\\u0440\\u043e \\u043f\\u043e\\u0436\\u0430\\u043b\\u043e\\u0432\\u0430\\u0442\\u044c! \\u041e\\u0442\\u043f\\u0440\\u0430\\u0432\\u044c\\u0442\\u0435 \\u0432\\u0430\\u0448 \\u043a\\u043e\\u043d\\u0442\\u0430\\u043a\\u0442 \\u0434\\u043b\\u044f \\u0430\\u0432\\u0442\\u043e\\u0440\\u0438\\u0437\\u0430\\u0446\\u0438\\u0438."}}'"
+2024-11-17 06:33:14,417 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[{"update_id":250555205,\n"message":{"message_id":482,"from":{"id":2113637494,"is_bot":false,"first_name":"0xFk","username":"dxqxxx","language_code":"ru"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731825194,"reply_to_message":{"message_id":481,"from":{"id":7317252711,"is_bot":true,"first_name":"TeleBotToControlIntercom","username":"TeleBotToControlIntercombot"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731825190,"text":"\\u0414\\u043e\\u0431\\u0440\\u043e \\u043f\\u043e\\u0436\\u0430\\u043b\\u043e\\u0432\\u0430\\u0442\\u044c! \\u041e\\u0442\\u043f\\u0440\\u0430\\u0432\\u044c\\u0442\\u0435 \\u0432\\u0430\\u0448 \\u043a\\u043e\\u043d\\u0442\\u0430\\u043a\\u0442 \\u0434\\u043b\\u044f \\u0430\\u0432\\u0442\\u043e\\u0440\\u0438\\u0437\\u0430\\u0446\\u0438\\u0438."},"contact":{"phone_number":"+79126991141","first_name":"0xFk","user_id":2113637494}}}]}'"
+2024-11-17 06:33:14,420 - aiogram.dispatcher.dispatcher - DEBUG - Received 1 updates.
+2024-11-17 06:33:14,428 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): domo-dev.profintel.ru:443
+2024-11-17 06:33:14,779 - urllib3.connectionpool - DEBUG - https://domo-dev.profintel.ru:443 "POST /tg-bot/check-tenant HTTP/1.1" 200 19
+2024-11-17 06:33:14,837 - aiogram - DEBUG - Make request: "sendMessage" with data: "{'chat_id': 2113637494, 'text': '🎉 Авторизация успешна! 🎉\n\n🆔 Ваш tenant_id: `22084`\n📞 Номер телефона: `79126991141`\n', 'parse_mode': 'Markdown', 'reply_markup': '{"keyboard": [[{"text": "Показать домофоны"}]], "resize_keyboard": true}'}" and files "None"
+2024-11-17 06:33:14,837 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555206, 'timeout': 20}" and files "None"
+2024-11-17 06:33:15,019 - aiogram - DEBUG - Response for sendMessage: [400] "'{"ok":false,"error_code":400,"description":"Bad Request: can\'t parse entities: Can\'t find end of the entity starting at byte offset 68"}'"
+2024-11-17 06:33:15,034 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-14' coro=<Dispatcher._process_polling_updates() done, defined at C:\Program Files\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=CantParseEntities("Can't parse entities: can't find end of the entity starting at byte offset 68")>
+Traceback (most recent call last):
+  File "C:\Program Files\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Aqua\Desktop\TeleBotToControlIntercom-master\app\handlers\authorize.py", line 79, in contact_handler
+    await message.answer(
+  File "C:\Program Files\Python311\Lib\site-packages\aiogram\types\message.py", line 438, in answer
+    return await self.bot.send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Program Files\Python311\Lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: can't find end of the entity starting at byte offset 68
+2024-11-17 06:33:35,000 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:33:35,111 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555206, 'timeout': 20}" and files "None"
+2024-11-17 06:33:55,274 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:33:55,386 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555206, 'timeout': 20}" and files "None"
+2024-11-17 06:34:03,372 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[{"update_id":250555206,\n"message":{"message_id":483,"from":{"id":2113637494,"is_bot":false,"first_name":"0xFk","username":"dxqxxx","language_code":"ru"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731825243,"reply_to_message":{"message_id":481,"from":{"id":7317252711,"is_bot":true,"first_name":"TeleBotToControlIntercom","username":"TeleBotToControlIntercombot"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731825190,"text":"\\u0414\\u043e\\u0431\\u0440\\u043e \\u043f\\u043e\\u0436\\u0430\\u043b\\u043e\\u0432\\u0430\\u0442\\u044c! \\u041e\\u0442\\u043f\\u0440\\u0430\\u0432\\u044c\\u0442\\u0435 \\u0432\\u0430\\u0448 \\u043a\\u043e\\u043d\\u0442\\u0430\\u043a\\u0442 \\u0434\\u043b\\u044f \\u0430\\u0432\\u0442\\u043e\\u0440\\u0438\\u0437\\u0430\\u0446\\u0438\\u0438."},"contact":{"phone_number":"+79126991141","first_name":"0xFk","user_id":2113637494}}}]}'"
+2024-11-17 06:34:03,376 - aiogram.dispatcher.dispatcher - DEBUG - Received 1 updates.
+2024-11-17 06:34:03,382 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): domo-dev.profintel.ru:443
+2024-11-17 06:34:03,761 - urllib3.connectionpool - DEBUG - https://domo-dev.profintel.ru:443 "POST /tg-bot/check-tenant HTTP/1.1" 200 19
+2024-11-17 06:34:03,820 - aiogram - DEBUG - Make request: "sendMessage" with data: "{'chat_id': 2113637494, 'text': '🎉 Авторизация успешна! 🎉\n\n🆔 Ваш tenant_id: `22084`\n📞 Номер телефона: `79126991141`\n', 'parse_mode': 'Markdown', 'reply_markup': '{"keyboard": [[{"text": "Показать домофоны"}]], "resize_keyboard": true}'}" and files "None"
+2024-11-17 06:34:03,820 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555207, 'timeout': 20}" and files "None"
+2024-11-17 06:34:03,967 - aiogram - DEBUG - Response for sendMessage: [400] "'{"ok":false,"error_code":400,"description":"Bad Request: can\'t parse entities: Can\'t find end of the entity starting at byte offset 68"}'"
+2024-11-17 06:34:03,983 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-20' coro=<Dispatcher._process_polling_updates() done, defined at C:\Program Files\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=CantParseEntities("Can't parse entities: can't find end of the entity starting at byte offset 68")>
+Traceback (most recent call last):
+  File "C:\Program Files\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Aqua\Desktop\TeleBotToControlIntercom-master\app\handlers\authorize.py", line 79, in contact_handler
+    await message.answer(
+  File "C:\Program Files\Python311\Lib\site-packages\aiogram\types\message.py", line 438, in answer
+    return await self.bot.send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Program Files\Python311\Lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: can't find end of the entity starting at byte offset 68
+2024-11-17 06:34:24,252 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:34:24,362 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555207, 'timeout': 20}" and files "None"
+2024-11-17 06:34:44,517 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:34:44,628 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555207, 'timeout': 20}" and files "None"
+2024-11-17 06:35:04,807 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:35:04,915 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555207, 'timeout': 20}" and files "None"
+2024-11-17 06:35:25,083 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:35:25,197 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555207, 'timeout': 20}" and files "None"
+2024-11-17 06:35:45,272 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:35:45,389 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555207, 'timeout': 20}" and files "None"
+2024-11-17 06:36:05,522 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:36:05,639 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555207, 'timeout': 20}" and files "None"
+2024-11-17 06:36:25,717 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:36:25,819 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555207, 'timeout': 20}" and files "None"
+2024-11-17 06:36:45,966 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:36:46,073 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555207, 'timeout': 20}" and files "None"
+2024-11-17 06:37:06,254 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:37:06,364 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555207, 'timeout': 20}" and files "None"
+2024-11-17 06:37:26,524 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:37:26,641 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555207, 'timeout': 20}" and files "None"
+2024-11-17 06:37:46,807 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:37:46,916 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555207, 'timeout': 20}" and files "None"
+2024-11-17 06:38:07,049 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:38:07,174 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555207, 'timeout': 20}" and files "None"
+2024-11-17 06:38:11,064 - aiogram.dispatcher.dispatcher - INFO - Stop polling...
+2024-11-17 06:38:11,074 - aiogram - WARNING - Goodbye!
+2024-11-17 06:38:15,576 - asyncio - DEBUG - Using proactor: IocpProactor
+2024-11-17 06:38:15,576 - aiogram - DEBUG - Make request: "getMe" with data: "{}" and files "None"
+2024-11-17 06:38:15,930 - aiogram - DEBUG - Response for getMe: [200] "'{"ok":true,"result":{"id":7317252711,"is_bot":true,"first_name":"TeleBotToControlIntercom","username":"TeleBotToControlIntercombot","can_join_groups":true,"can_read_all_group_messages":false,"supports_inline_queries":false,"can_connect_to_business":false,"has_main_web_app":false}}'"
+2024-11-17 06:38:15,933 - aiogram - INFO - Bot: TeleBotToControlIntercom [@TeleBotToControlIntercombot]
+2024-11-17 06:38:15,934 - aiogram - DEBUG - Make request: "getWebhookInfo" with data: "{}" and files "None"
+2024-11-17 06:38:16,023 - aiogram - DEBUG - Response for getWebhookInfo: [200] "'{"ok":true,"result":{"url":"","has_custom_certificate":false,"pending_update_count":0}}'"
+2024-11-17 06:38:16,031 - aiogram - DEBUG - Make request: "deleteWebhook" with data: "{'drop_pending_updates': True}" and files "None"
+2024-11-17 06:38:16,192 - aiogram - DEBUG - Response for deleteWebhook: [200] "'{"ok":true,"result":true,"description":"Webhook is already deleted"}'"
+2024-11-17 06:38:16,192 - aiogram - WARNING - Updates were skipped successfully.
+2024-11-17 06:38:16,192 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2024-11-17 06:38:16,192 - aiogram - DEBUG - Make request: "getWebhookInfo" with data: "{}" and files "None"
+2024-11-17 06:38:16,292 - aiogram - DEBUG - Response for getWebhookInfo: [200] "'{"ok":true,"result":{"url":"","has_custom_certificate":false,"pending_update_count":0}}'"
+2024-11-17 06:38:16,292 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'timeout': 20}" and files "None"
+2024-11-17 06:38:19,812 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[{"update_id":250555207,\n"message":{"message_id":484,"from":{"id":2113637494,"is_bot":false,"first_name":"0xFk","username":"dxqxxx","language_code":"ru"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731825500,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}]}'"
+2024-11-17 06:38:19,813 - aiogram.dispatcher.dispatcher - DEBUG - Received 1 updates.
+2024-11-17 06:38:19,815 - aiogram - DEBUG - Make request: "sendMessage" with data: "{'chat_id': 2113637494, 'text': 'Добро пожаловать! Отправьте ваш контакт для авторизации.', 'reply_markup': '{"keyboard": [[{"text": "Отправить контакт", "request_contact": true}]], "resize_keyboard": true}'}" and files "None"
+2024-11-17 06:38:19,919 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555208, 'timeout': 20}" and files "None"
+2024-11-17 06:38:19,929 - aiogram - DEBUG - Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":485,"from":{"id":7317252711,"is_bot":true,"first_name":"TeleBotToControlIntercom","username":"TeleBotToControlIntercombot"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731825500,"text":"\\u0414\\u043e\\u0431\\u0440\\u043e \\u043f\\u043e\\u0436\\u0430\\u043b\\u043e\\u0432\\u0430\\u0442\\u044c! \\u041e\\u0442\\u043f\\u0440\\u0430\\u0432\\u044c\\u0442\\u0435 \\u0432\\u0430\\u0448 \\u043a\\u043e\\u043d\\u0442\\u0430\\u043a\\u0442 \\u0434\\u043b\\u044f \\u0430\\u0432\\u0442\\u043e\\u0440\\u0438\\u0437\\u0430\\u0446\\u0438\\u0438."}}'"
+2024-11-17 06:38:22,546 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[{"update_id":250555208,\n"message":{"message_id":486,"from":{"id":2113637494,"is_bot":false,"first_name":"0xFk","username":"dxqxxx","language_code":"ru"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731825502,"reply_to_message":{"message_id":485,"from":{"id":7317252711,"is_bot":true,"first_name":"TeleBotToControlIntercom","username":"TeleBotToControlIntercombot"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731825500,"text":"\\u0414\\u043e\\u0431\\u0440\\u043e \\u043f\\u043e\\u0436\\u0430\\u043b\\u043e\\u0432\\u0430\\u0442\\u044c! \\u041e\\u0442\\u043f\\u0440\\u0430\\u0432\\u044c\\u0442\\u0435 \\u0432\\u0430\\u0448 \\u043a\\u043e\\u043d\\u0442\\u0430\\u043a\\u0442 \\u0434\\u043b\\u044f \\u0430\\u0432\\u0442\\u043e\\u0440\\u0438\\u0437\\u0430\\u0446\\u0438\\u0438."},"contact":{"phone_number":"+79126991141","first_name":"0xFk","user_id":2113637494}}}]}'"
+2024-11-17 06:38:22,548 - aiogram.dispatcher.dispatcher - DEBUG - Received 1 updates.
+2024-11-17 06:38:22,557 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): domo-dev.profintel.ru:443
+2024-11-17 06:38:22,948 - urllib3.connectionpool - DEBUG - https://domo-dev.profintel.ru:443 "POST /tg-bot/check-tenant HTTP/1.1" 200 19
+2024-11-17 06:38:22,996 - aiogram - DEBUG - Make request: "sendMessage" with data: "{'chat_id': 2113637494, 'text': '🎉 *Авторизация успешна!* 🎉\n\n🆔 *Ваш tenant_id:* `22084`\n📞 *Номер телефона:* `79126991141`\n', 'parse_mode': 'Markdown', 'reply_markup': '{"keyboard": [[{"text": "Показать домофоны"}]], "resize_keyboard": true}'}" and files "None"
+2024-11-17 06:38:23,010 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555209, 'timeout': 20}" and files "None"
+2024-11-17 06:38:23,157 - aiogram - DEBUG - Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":487,"from":{"id":7317252711,"is_bot":true,"first_name":"TeleBotToControlIntercom","username":"TeleBotToControlIntercombot"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731825503,"text":"\\ud83c\\udf89 \\u0410\\u0432\\u0442\\u043e\\u0440\\u0438\\u0437\\u0430\\u0446\\u0438\\u044f \\u0443\\u0441\\u043f\\u0435\\u0448\\u043d\\u0430! \\ud83c\\udf89\\n\\n\\ud83c\\udd94 \\u0412\\u0430\\u0448 tenant_id: 22084\\n\\ud83d\\udcde \\u041d\\u043e\\u043c\\u0435\\u0440 \\u0442\\u0435\\u043b\\u0435\\u0444\\u043e\\u043d\\u0430: 79126991141","entities":[{"offset":3,"length":20,"type":"bold"},{"offset":31,"length":14,"type":"bold"},{"offset":46,"length":5,"type":"code"},{"offset":55,"length":15,"type":"bold"},{"offset":71,"length":11,"type":"code"}]}}'"
+2024-11-17 06:38:43,118 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:38:43,227 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555209, 'timeout': 20}" and files "None"
+2024-11-17 06:38:44,461 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[{"update_id":250555209,\n"message":{"message_id":488,"from":{"id":2113637494,"is_bot":false,"first_name":"0xFk","username":"dxqxxx","language_code":"ru"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731825524,"text":"\\u041f\\u043e\\u043a\\u0430\\u0437\\u0430\\u0442\\u044c \\u0434\\u043e\\u043c\\u043e\\u0444\\u043e\\u043d\\u044b"}}]}'"
+2024-11-17 06:38:44,463 - aiogram.dispatcher.dispatcher - DEBUG - Received 1 updates.
+2024-11-17 06:38:44,465 - handlers.apartament - INFO - [LIST_DOMOFONS] Обработчик вызван. Пользователь: dxqxxx
+2024-11-17 06:38:44,466 - handlers.apartament - DEBUG - [LIST_DOMOFONS] Tenant ID из message.bot: 22084
+2024-11-17 06:38:44,466 - handlers.apartament - INFO - [LIST_DOMOFONS] Отправляем запрос к API для tenant_id: 22084
+2024-11-17 06:38:44,473 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): domo-dev.profintel.ru:443
+2024-11-17 06:38:44,870 - urllib3.connectionpool - DEBUG - https://domo-dev.profintel.ru:443 "GET /tg-bot/domo.apartment?tenant_id=22084 HTTP/1.1" 200 1175
+2024-11-17 06:38:44,878 - handlers.apartament - DEBUG - [LIST_DOMOFONS] Ответ от API: [{'id': 757, 'name': '3', 'location': {'id': 755, 'fias_uuid': '9555c7f6-1487-45ac-b942-1c7df2ed9d42', 'readable_address': 'ул. Стахановская д. 43а', 'readable_address_lk': 'ул. Стахановская, дом 43', 'address_alias': None, 'porch': None, 'gate': None, 'floor': None, 'other': None, 'apartments_number': '3'}, 'paid_before': None, 'operation_status': 200, 'type': None, 'tenants': [{'id': 62, 'name': 'Пинаев Андрей Степанович', 'timezone': 'UTC+5', 'phone': '79088830608', 'alias_name': None, 'status': {'operation_status': 200, 'role': 100, 'displayed': True}}, {'id': 859, 'name': 'А', 'timezone': 'UTC+5', 'phone': '79827279691', 'alias_name': None, 'status': {'operation_status': 200, 'role': 300, 'displayed': True}}, {'id': 860, 'name': 'Анастасия ', 'timezone': 'UTC+5', 'phone': '79224477430', 'alias_name': None, 'status': {'operation_status': 200, 'role': 300, 'displayed': True}}, {'id': 22084, 'name': 'DoubleRR', 'timezone': None, 'phone': '79126991141', 'alias_name': None, 'status': {'operation_status': 200, 'role': 100, 'displayed': True}}, {'id': 22086, 'name': 'DoubleRR', 'timezone': None, 'phone': '79049818179', 'alias_name': None, 'status': {'operation_status': 200, 'role': 100, 'displayed': True}}]}]
+2024-11-17 06:38:44,881 - handlers.apartament - INFO - [LIST_DOMOFONS] Найдено 1 домофонов.
+2024-11-17 06:38:44,882 - aiogram - DEBUG - Make request: "sendMessage" with data: "{'chat_id': 2113637494, 'text': 'Выберите домофон:', 'reply_markup': '{"keyboard": [[{"text": "3"}]], "resize_keyboard": true}'}" and files "None"
+2024-11-17 06:38:44,884 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555210, 'timeout': 20}" and files "None"
+2024-11-17 06:38:44,989 - aiogram - DEBUG - Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":489,"from":{"id":7317252711,"is_bot":true,"first_name":"TeleBotToControlIntercom","username":"TeleBotToControlIntercombot"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731825525,"text":"\\u0412\\u044b\\u0431\\u0435\\u0440\\u0438\\u0442\\u0435 \\u0434\\u043e\\u043c\\u043e\\u0444\\u043e\\u043d:"}}'"
+2024-11-17 06:38:46,302 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[{"update_id":250555210,\n"message":{"message_id":490,"from":{"id":2113637494,"is_bot":false,"first_name":"0xFk","username":"dxqxxx","language_code":"ru"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731825526,"text":"3"}}]}'"
+2024-11-17 06:38:46,304 - aiogram.dispatcher.dispatcher - DEBUG - Received 1 updates.
+2024-11-17 06:38:46,312 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): domo-dev.profintel.ru:443
+2024-11-17 06:38:46,912 - urllib3.connectionpool - DEBUG - https://domo-dev.profintel.ru:443 "GET /tg-bot/domo.apartment/757/domofon?tenant_id=22084 HTTP/1.1" 200 6995
+2024-11-17 06:38:46,928 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): domo-dev.profintel.ru:443
+2024-11-17 06:38:47,383 - urllib3.connectionpool - DEBUG - https://domo-dev.profintel.ru:443 "POST /tg-bot/domo.domofon/urlsOnType?tenant_id=22084 HTTP/1.1" 200 236
+2024-11-17 06:38:47,390 - aiogram - DEBUG - Make request: "sendPhoto" with data: "{'chat_id': 2113637494, 'caption': 'Снимок с домофона Подъезд со стороны двора.', 'photo': 'https://cctv-streamer-12.profintel.ru/snapshot/image.jpg?st=Q9Tjo0GXHi_bK3vKCcmd9g&e=1732023527&id=11274'}" and files "{}"
+2024-11-17 06:38:47,395 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555211, 'timeout': 20}" and files "None"
+2024-11-17 06:38:48,348 - aiogram - DEBUG - Response for sendPhoto: [200] "'{"ok":true,"result":{"message_id":491,"from":{"id":7317252711,"is_bot":true,"first_name":"TeleBotToControlIntercom","username":"TeleBotToControlIntercombot"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731825528,"photo":[{"file_id":"AgACAgQAAxkDAAIB62c5j3gWHWAfrZV76cgZc0ZHo-uCAAJNtjEbfnPVUd4E2O8AAf9i1QEAAwIAA3MAAzYE","file_unique_id":"AQADTbYxG35z1VF4","file_size":683,"width":90,"height":51},{"file_id":"AgACAgQAAxkDAAIB62c5j3gWHWAfrZV76cgZc0ZHo-uCAAJNtjEbfnPVUd4E2O8AAf9i1QEAAwIAA20AAzYE","file_unique_id":"AQADTbYxG35z1VFy","file_size":8009,"width":320,"height":180},{"file_id":"AgACAgQAAxkDAAIB62c5j3gWHWAfrZV76cgZc0ZHo-uCAAJNtjEbfnPVUd4E2O8AAf9i1QEAAwIAA3kAAzYE","file_unique_id":"AQADTbYxG35z1VF-","file_size":34030,"width":1280,"height":720},{"file_id":"AgACAgQAAxkDAAIB62c5j3gWHWAfrZV76cgZc0ZHo-uCAAJNtjEbfnPVUd4E2O8AAf9i1QEAAwIAA3gAAzYE","file_unique_id":"AQADTbYxG35z1VF9","file_size":34868,"width":800,"height":450}],"caption":"\\u0421\\u043d\\u0438\\u043c\\u043e\\u043a \\u0441 \\u0434\\u043e\\u043c\\u043e\\u0444\\u043e\\u043d\\u0430 \\u041f\\u043e\\u0434\\u044a\\u0435\\u0437\\u0434 \\u0441\\u043e \\u0441\\u0442\\u043e\\u0440\\u043e\\u043d\\u044b \\u0434\\u0432\\u043e\\u0440\\u0430."}}'"
+2024-11-17 06:38:54,598 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[{"update_id":250555211,\n"message":{"message_id":492,"from":{"id":2113637494,"is_bot":false,"first_name":"0xFk","username":"dxqxxx","language_code":"ru"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731825534,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}]}'"
+2024-11-17 06:38:54,599 - aiogram.dispatcher.dispatcher - DEBUG - Received 1 updates.
+2024-11-17 06:38:54,601 - aiogram - DEBUG - Make request: "sendMessage" with data: "{'chat_id': 2113637494, 'text': 'Добро пожаловать! Отправьте ваш контакт для авторизации.', 'reply_markup': '{"keyboard": [[{"text": "Отправить контакт", "request_contact": true}]], "resize_keyboard": true}'}" and files "None"
+2024-11-17 06:38:54,705 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555212, 'timeout': 20}" and files "None"
+2024-11-17 06:38:54,805 - aiogram - DEBUG - Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":493,"from":{"id":7317252711,"is_bot":true,"first_name":"TeleBotToControlIntercom","username":"TeleBotToControlIntercombot"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731825535,"text":"\\u0414\\u043e\\u0431\\u0440\\u043e \\u043f\\u043e\\u0436\\u0430\\u043b\\u043e\\u0432\\u0430\\u0442\\u044c! \\u041e\\u0442\\u043f\\u0440\\u0430\\u0432\\u044c\\u0442\\u0435 \\u0432\\u0430\\u0448 \\u043a\\u043e\\u043d\\u0442\\u0430\\u043a\\u0442 \\u0434\\u043b\\u044f \\u0430\\u0432\\u0442\\u043e\\u0440\\u0438\\u0437\\u0430\\u0446\\u0438\\u0438."}}'"
+2024-11-17 06:39:00,065 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[{"update_id":250555212,\n"message":{"message_id":494,"from":{"id":2113637494,"is_bot":false,"first_name":"0xFk","username":"dxqxxx","language_code":"ru"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731825540,"reply_to_message":{"message_id":493,"from":{"id":7317252711,"is_bot":true,"first_name":"TeleBotToControlIntercom","username":"TeleBotToControlIntercombot"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731825535,"text":"\\u0414\\u043e\\u0431\\u0440\\u043e \\u043f\\u043e\\u0436\\u0430\\u043b\\u043e\\u0432\\u0430\\u0442\\u044c! \\u041e\\u0442\\u043f\\u0440\\u0430\\u0432\\u044c\\u0442\\u0435 \\u0432\\u0430\\u0448 \\u043a\\u043e\\u043d\\u0442\\u0430\\u043a\\u0442 \\u0434\\u043b\\u044f \\u0430\\u0432\\u0442\\u043e\\u0440\\u0438\\u0437\\u0430\\u0446\\u0438\\u0438."},"contact":{"phone_number":"+79126991141","first_name":"0xFk","user_id":2113637494}}}]}'"
+2024-11-17 06:39:00,068 - aiogram.dispatcher.dispatcher - DEBUG - Received 1 updates.
+2024-11-17 06:39:00,073 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): domo-dev.profintel.ru:443
+2024-11-17 06:39:00,425 - urllib3.connectionpool - DEBUG - https://domo-dev.profintel.ru:443 "POST /tg-bot/check-tenant HTTP/1.1" 200 19
+2024-11-17 06:39:00,482 - aiogram - DEBUG - Make request: "sendMessage" with data: "{'chat_id': 2113637494, 'text': '🎉 *Авторизация успешна!* 🎉\n\n🆔 *Ваш tenant_id:* `22084`\n📞 *Номер телефона:* `79126991141`\n', 'parse_mode': 'Markdown', 'reply_markup': '{"keyboard": [[{"text": "Показать домофоны"}]], "resize_keyboard": true}'}" and files "None"
+2024-11-17 06:39:00,482 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555213, 'timeout': 20}" and files "None"
+2024-11-17 06:39:00,633 - aiogram - DEBUG - Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":495,"from":{"id":7317252711,"is_bot":true,"first_name":"TeleBotToControlIntercom","username":"TeleBotToControlIntercombot"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731825540,"text":"\\ud83c\\udf89 \\u0410\\u0432\\u0442\\u043e\\u0440\\u0438\\u0437\\u0430\\u0446\\u0438\\u044f \\u0443\\u0441\\u043f\\u0435\\u0448\\u043d\\u0430! \\ud83c\\udf89\\n\\n\\ud83c\\udd94 \\u0412\\u0430\\u0448 tenant_id: 22084\\n\\ud83d\\udcde \\u041d\\u043e\\u043c\\u0435\\u0440 \\u0442\\u0435\\u043b\\u0435\\u0444\\u043e\\u043d\\u0430: 79126991141","entities":[{"offset":3,"length":20,"type":"bold"},{"offset":31,"length":14,"type":"bold"},{"offset":46,"length":5,"type":"code"},{"offset":55,"length":15,"type":"bold"},{"offset":71,"length":11,"type":"code"}]}}'"
+2024-11-17 06:39:20,601 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:39:20,709 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555213, 'timeout': 20}" and files "None"
+2024-11-17 06:39:41,086 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:39:41,192 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555213, 'timeout': 20}" and files "None"
+2024-11-17 06:40:01,344 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:40:01,451 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555213, 'timeout': 20}" and files "None"
+2024-11-17 06:40:21,625 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:40:21,741 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555213, 'timeout': 20}" and files "None"
+2024-11-17 06:40:28,592 - aiogram.dispatcher.dispatcher - INFO - Stop polling...
+2024-11-17 06:40:28,592 - aiogram - WARNING - Goodbye!
+2024-11-17 06:40:35,764 - asyncio - DEBUG - Using proactor: IocpProactor
+2024-11-17 06:40:35,772 - aiogram - DEBUG - Make request: "getMe" with data: "{}" and files "None"
+2024-11-17 06:40:36,078 - aiogram - DEBUG - Response for getMe: [200] "'{"ok":true,"result":{"id":7317252711,"is_bot":true,"first_name":"TeleBotToControlIntercom","username":"TeleBotToControlIntercombot","can_join_groups":true,"can_read_all_group_messages":false,"supports_inline_queries":false,"can_connect_to_business":false,"has_main_web_app":false}}'"
+2024-11-17 06:40:36,078 - aiogram - INFO - Bot: TeleBotToControlIntercom [@TeleBotToControlIntercombot]
+2024-11-17 06:40:36,078 - aiogram - DEBUG - Make request: "getWebhookInfo" with data: "{}" and files "None"
+2024-11-17 06:40:36,177 - aiogram - DEBUG - Response for getWebhookInfo: [200] "'{"ok":true,"result":{"url":"","has_custom_certificate":false,"pending_update_count":0}}'"
+2024-11-17 06:40:36,177 - aiogram - DEBUG - Make request: "deleteWebhook" with data: "{'drop_pending_updates': True}" and files "None"
+2024-11-17 06:40:36,279 - aiogram - DEBUG - Response for deleteWebhook: [200] "'{"ok":true,"result":true,"description":"Webhook is already deleted"}'"
+2024-11-17 06:40:36,279 - aiogram - WARNING - Updates were skipped successfully.
+2024-11-17 06:40:36,279 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2024-11-17 06:40:36,279 - aiogram - DEBUG - Make request: "getWebhookInfo" with data: "{}" and files "None"
+2024-11-17 06:40:36,379 - aiogram - DEBUG - Response for getWebhookInfo: [200] "'{"ok":true,"result":{"url":"","has_custom_certificate":false,"pending_update_count":0}}'"
+2024-11-17 06:40:36,379 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'timeout': 20}" and files "None"
+2024-11-17 06:40:53,178 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[{"update_id":250555213,\n"message":{"message_id":496,"from":{"id":2113637494,"is_bot":false,"first_name":"0xFk","username":"dxqxxx","language_code":"ru"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731825653,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}]}'"
+2024-11-17 06:40:53,181 - aiogram.dispatcher.dispatcher - DEBUG - Received 1 updates.
+2024-11-17 06:40:53,182 - aiogram - DEBUG - Make request: "sendMessage" with data: "{'chat_id': 2113637494, 'text': 'Добро пожаловать! Отправьте ваш контакт для авторизации.', 'reply_markup': '{"keyboard": [[{"text": "Отправить контакт", "request_contact": true}]], "resize_keyboard": true}'}" and files "None"
+2024-11-17 06:40:53,293 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555214, 'timeout': 20}" and files "None"
+2024-11-17 06:40:53,296 - aiogram - DEBUG - Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":497,"from":{"id":7317252711,"is_bot":true,"first_name":"TeleBotToControlIntercom","username":"TeleBotToControlIntercombot"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731825653,"text":"\\u0414\\u043e\\u0431\\u0440\\u043e \\u043f\\u043e\\u0436\\u0430\\u043b\\u043e\\u0432\\u0430\\u0442\\u044c! \\u041e\\u0442\\u043f\\u0440\\u0430\\u0432\\u044c\\u0442\\u0435 \\u0432\\u0430\\u0448 \\u043a\\u043e\\u043d\\u0442\\u0430\\u043a\\u0442 \\u0434\\u043b\\u044f \\u0430\\u0432\\u0442\\u043e\\u0440\\u0438\\u0437\\u0430\\u0446\\u0438\\u0438."}}'"
+2024-11-17 06:40:56,064 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[{"update_id":250555214,\n"message":{"message_id":498,"from":{"id":2113637494,"is_bot":false,"first_name":"0xFk","username":"dxqxxx","language_code":"ru"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731825656,"reply_to_message":{"message_id":497,"from":{"id":7317252711,"is_bot":true,"first_name":"TeleBotToControlIntercom","username":"TeleBotToControlIntercombot"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731825653,"text":"\\u0414\\u043e\\u0431\\u0440\\u043e \\u043f\\u043e\\u0436\\u0430\\u043b\\u043e\\u0432\\u0430\\u0442\\u044c! \\u041e\\u0442\\u043f\\u0440\\u0430\\u0432\\u044c\\u0442\\u0435 \\u0432\\u0430\\u0448 \\u043a\\u043e\\u043d\\u0442\\u0430\\u043a\\u0442 \\u0434\\u043b\\u044f \\u0430\\u0432\\u0442\\u043e\\u0440\\u0438\\u0437\\u0430\\u0446\\u0438\\u0438."},"contact":{"phone_number":"+79126991141","first_name":"0xFk","user_id":2113637494}}}]}'"
+2024-11-17 06:40:56,067 - aiogram.dispatcher.dispatcher - DEBUG - Received 1 updates.
+2024-11-17 06:40:56,075 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): domo-dev.profintel.ru:443
+2024-11-17 06:40:56,449 - urllib3.connectionpool - DEBUG - https://domo-dev.profintel.ru:443 "POST /tg-bot/check-tenant HTTP/1.1" 200 19
+2024-11-17 06:40:56,457 - aiogram - DEBUG - Make request: "sendMessage" with data: "{'chat_id': 2113637494, 'text': '🎉 *Авторизация успешна!* 🎉\n\n🆔 *Ваш tenant_id:* `22084`\n📞 *Номер телефона:* `79126991141`\n', 'parse_mode': 'Markdown', 'reply_markup': '{"keyboard": [[{"text": "Показать домофоны"}]], "resize_keyboard": true}'}" and files "None"
+2024-11-17 06:40:56,471 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555215, 'timeout': 20}" and files "None"
+2024-11-17 06:40:56,569 - aiogram - DEBUG - Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":499,"from":{"id":7317252711,"is_bot":true,"first_name":"TeleBotToControlIntercom","username":"TeleBotToControlIntercombot"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731825656,"text":"\\ud83c\\udf89 \\u0410\\u0432\\u0442\\u043e\\u0440\\u0438\\u0437\\u0430\\u0446\\u0438\\u044f \\u0443\\u0441\\u043f\\u0435\\u0448\\u043d\\u0430! \\ud83c\\udf89\\n\\n\\ud83c\\udd94 \\u0412\\u0430\\u0448 tenant_id: 22084\\n\\ud83d\\udcde \\u041d\\u043e\\u043c\\u0435\\u0440 \\u0442\\u0435\\u043b\\u0435\\u0444\\u043e\\u043d\\u0430: 79126991141","entities":[{"offset":3,"length":20,"type":"bold"},{"offset":31,"length":14,"type":"bold"},{"offset":46,"length":5,"type":"code"},{"offset":55,"length":15,"type":"bold"},{"offset":71,"length":11,"type":"code"}]}}'"
+2024-11-17 06:40:58,298 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[{"update_id":250555215,\n"message":{"message_id":500,"from":{"id":2113637494,"is_bot":false,"first_name":"0xFk","username":"dxqxxx","language_code":"ru"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731825658,"text":"\\u041f\\u043e\\u043a\\u0430\\u0437\\u0430\\u0442\\u044c \\u0434\\u043e\\u043c\\u043e\\u0444\\u043e\\u043d\\u044b"}}]}'"
+2024-11-17 06:40:58,300 - aiogram.dispatcher.dispatcher - DEBUG - Received 1 updates.
+2024-11-17 06:40:58,302 - handlers.apartament - INFO - [LIST_DOMOFONS] Обработчик вызван. Пользователь: dxqxxx
+2024-11-17 06:40:58,302 - handlers.apartament - DEBUG - [LIST_DOMOFONS] Tenant ID из message.bot: 22084
+2024-11-17 06:40:58,302 - handlers.apartament - INFO - [LIST_DOMOFONS] Отправляем запрос к API для tenant_id: 22084
+2024-11-17 06:40:58,308 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): domo-dev.profintel.ru:443
+2024-11-17 06:40:58,701 - urllib3.connectionpool - DEBUG - https://domo-dev.profintel.ru:443 "GET /tg-bot/domo.apartment?tenant_id=22084 HTTP/1.1" 200 1175
+2024-11-17 06:40:58,701 - handlers.apartament - DEBUG - [LIST_DOMOFONS] Ответ от API: [{'id': 757, 'name': '3', 'location': {'id': 755, 'fias_uuid': '9555c7f6-1487-45ac-b942-1c7df2ed9d42', 'readable_address': 'ул. Стахановская д. 43а', 'readable_address_lk': 'ул. Стахановская, дом 43', 'address_alias': None, 'porch': None, 'gate': None, 'floor': None, 'other': None, 'apartments_number': '3'}, 'paid_before': None, 'operation_status': 200, 'type': None, 'tenants': [{'id': 62, 'name': 'Пинаев Андрей Степанович', 'timezone': 'UTC+5', 'phone': '79088830608', 'alias_name': None, 'status': {'operation_status': 200, 'role': 100, 'displayed': True}}, {'id': 859, 'name': 'А', 'timezone': 'UTC+5', 'phone': '79827279691', 'alias_name': None, 'status': {'operation_status': 200, 'role': 300, 'displayed': True}}, {'id': 860, 'name': 'Анастасия ', 'timezone': 'UTC+5', 'phone': '79224477430', 'alias_name': None, 'status': {'operation_status': 200, 'role': 300, 'displayed': True}}, {'id': 22084, 'name': 'DoubleRR', 'timezone': None, 'phone': '79126991141', 'alias_name': None, 'status': {'operation_status': 200, 'role': 100, 'displayed': True}}, {'id': 22086, 'name': 'DoubleRR', 'timezone': None, 'phone': '79049818179', 'alias_name': None, 'status': {'operation_status': 200, 'role': 100, 'displayed': True}}]}]
+2024-11-17 06:40:58,717 - handlers.apartament - INFO - [LIST_DOMOFONS] Найдено 1 домофонов.
+2024-11-17 06:40:58,717 - aiogram - DEBUG - Make request: "sendMessage" with data: "{'chat_id': 2113637494, 'text': 'Выберите домофон:', 'reply_markup': '{"keyboard": [[{"text": "3"}]], "resize_keyboard": true}'}" and files "None"
+2024-11-17 06:40:58,717 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555216, 'timeout': 20}" and files "None"
+2024-11-17 06:40:58,812 - aiogram - DEBUG - Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":501,"from":{"id":7317252711,"is_bot":true,"first_name":"TeleBotToControlIntercom","username":"TeleBotToControlIntercombot"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731825659,"text":"\\u0412\\u044b\\u0431\\u0435\\u0440\\u0438\\u0442\\u0435 \\u0434\\u043e\\u043c\\u043e\\u0444\\u043e\\u043d:"}}'"
+2024-11-17 06:41:00,245 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[{"update_id":250555216,\n"message":{"message_id":502,"from":{"id":2113637494,"is_bot":false,"first_name":"0xFk","username":"dxqxxx","language_code":"ru"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731825660,"text":"3"}}]}'"
+2024-11-17 06:41:00,247 - aiogram.dispatcher.dispatcher - DEBUG - Received 1 updates.
+2024-11-17 06:41:00,250 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): domo-dev.profintel.ru:443
+2024-11-17 06:41:00,962 - urllib3.connectionpool - DEBUG - https://domo-dev.profintel.ru:443 "GET /tg-bot/domo.apartment/757/domofon?tenant_id=22084 HTTP/1.1" 200 6995
+2024-11-17 06:41:00,981 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): domo-dev.profintel.ru:443
+2024-11-17 06:41:01,556 - urllib3.connectionpool - DEBUG - https://domo-dev.profintel.ru:443 "POST /tg-bot/domo.domofon/urlsOnType?tenant_id=22084 HTTP/1.1" 200 236
+2024-11-17 06:41:01,572 - aiogram - DEBUG - Make request: "sendPhoto" with data: "{'chat_id': 2113637494, 'caption': 'Снимок с домофона Подъезд со стороны двора.', 'photo': 'https://cctv-streamer-12.profintel.ru/snapshot/image.jpg?st=nMl5zB68PvKTwk2YeKLvnA&e=1732023661&id=11274'}" and files "{}"
+2024-11-17 06:41:01,574 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 06:41:02,495 - aiogram - DEBUG - Response for sendPhoto: [200] "'{"ok":true,"result":{"message_id":503,"from":{"id":7317252711,"is_bot":true,"first_name":"TeleBotToControlIntercom","username":"TeleBotToControlIntercombot"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731825662,"photo":[{"file_id":"AgACAgQAAxkDAAIB92c5j_79VhZtYixvm_skFnh0g_vRAALJtTEbt6nVUQaShZGJkQW0AQADAgADcwADNgQ","file_unique_id":"AQADybUxG7ep1VF4","file_size":909,"width":90,"height":51},{"file_id":"AgACAgQAAxkDAAIB92c5j_79VhZtYixvm_skFnh0g_vRAALJtTEbt6nVUQaShZGJkQW0AQADAgADbQADNgQ","file_unique_id":"AQADybUxG7ep1VFy","file_size":10131,"width":320,"height":180},{"file_id":"AgACAgQAAxkDAAIB92c5j_79VhZtYixvm_skFnh0g_vRAALJtTEbt6nVUQaShZGJkQW0AQADAgADeQADNgQ","file_unique_id":"AQADybUxG7ep1VF-","file_size":36678,"width":1280,"height":720},{"file_id":"AgACAgQAAxkDAAIB92c5j_79VhZtYixvm_skFnh0g_vRAALJtTEbt6nVUQaShZGJkQW0AQADAgADeAADNgQ","file_unique_id":"AQADybUxG7ep1VF9","file_size":40426,"width":800,"height":450}],"caption":"\\u0421\\u043d\\u0438\\u043c\\u043e\\u043a \\u0441 \\u0434\\u043e\\u043c\\u043e\\u0444\\u043e\\u043d\\u0430 \\u041f\\u043e\\u0434\\u044a\\u0435\\u0437\\u0434 \\u0441\\u043e \\u0441\\u0442\\u043e\\u0440\\u043e\\u043d\\u044b \\u0434\\u0432\\u043e\\u0440\\u0430."}}'"
+2024-11-17 06:41:21,736 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:41:21,843 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 06:41:41,925 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:41:42,038 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 06:42:02,160 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:42:02,267 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 06:42:22,350 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:42:22,464 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 06:42:42,581 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:42:42,693 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 06:43:02,784 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:43:02,888 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 06:43:22,989 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:43:23,103 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 06:43:43,264 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:43:43,396 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 06:44:03,537 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:44:03,647 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 06:44:23,752 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:44:23,857 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 06:44:43,994 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:44:44,096 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 06:45:04,184 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:45:04,290 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 06:45:24,430 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:45:24,532 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 06:45:44,615 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:45:44,731 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 06:46:04,923 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:46:05,028 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 06:46:25,166 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:46:25,276 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 06:46:45,543 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:46:45,648 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 06:47:05,744 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:47:05,857 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 06:47:25,944 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:47:26,049 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 06:47:46,124 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:47:46,235 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 06:48:06,336 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:48:06,444 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 06:48:26,614 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:48:26,725 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 06:48:46,883 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:48:47,014 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 06:49:07,165 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:49:07,278 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 06:49:27,438 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:49:27,542 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 06:49:47,633 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:49:47,738 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 06:50:07,818 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:50:07,927 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 06:50:28,062 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:50:28,169 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 06:50:48,311 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:50:48,428 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 06:51:08,615 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:51:08,725 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 06:51:28,836 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:51:28,938 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 06:51:49,063 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:51:49,170 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 06:52:09,255 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:52:09,359 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 06:52:29,446 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:52:29,560 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 06:52:49,685 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:52:49,788 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 06:53:10,063 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:53:10,171 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 06:53:30,338 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:53:30,453 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 06:53:50,603 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:53:50,711 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 06:54:10,889 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:54:11,004 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 06:54:31,162 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:54:31,269 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 06:54:51,367 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:54:51,477 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 06:55:11,573 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:55:11,682 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 06:55:31,780 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:55:31,890 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 06:55:52,015 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:55:52,123 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 06:56:12,237 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:56:12,340 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 06:56:32,507 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:56:32,625 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 06:56:52,788 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:56:52,899 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 06:57:12,998 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:57:13,107 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 06:57:33,175 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:57:33,306 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 06:57:53,407 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:57:53,528 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 06:58:13,674 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:58:13,776 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 06:58:33,859 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:58:33,964 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 06:58:54,052 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:58:54,165 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 06:59:14,400 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:59:14,504 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 06:59:34,879 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:59:34,982 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 06:59:55,151 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 06:59:55,282 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:00:15,439 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 07:00:15,551 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:00:35,624 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 07:00:35,748 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:00:55,835 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 07:00:55,960 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:01:16,056 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 07:01:16,168 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:01:36,249 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 07:01:36,359 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:01:56,469 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 07:01:56,588 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:02:16,669 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 07:02:16,781 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:02:36,951 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 07:02:37,062 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:02:57,225 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 07:02:57,334 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:03:17,509 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 07:03:17,618 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:03:37,705 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 07:03:37,814 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:03:57,912 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 07:03:58,018 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:04:18,128 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 07:04:18,239 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:04:38,320 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 07:04:38,437 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:04:58,572 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 07:04:58,679 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:05:18,762 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 07:05:18,873 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:05:38,952 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 07:05:39,059 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:05:59,141 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 07:05:59,248 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:06:19,373 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 07:06:19,484 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:06:39,600 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 07:06:39,715 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:06:59,803 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 07:06:59,915 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:07:19,994 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 07:07:20,101 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:07:40,176 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 07:07:40,289 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:08:00,392 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 07:08:00,501 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:08:20,598 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 07:08:20,701 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:08:40,787 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 07:08:40,894 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:09:01,071 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 07:09:01,195 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:09:21,346 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 07:09:21,452 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:09:41,620 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 07:09:41,724 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:10:01,897 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 07:10:02,006 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:10:22,091 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 07:10:22,204 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:10:42,344 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 07:10:42,448 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:11:02,526 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 07:11:02,634 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:11:22,796 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 07:11:22,906 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:11:42,986 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 07:11:43,096 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:12:03,211 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 07:12:03,321 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:12:23,635 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 07:12:23,748 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:12:43,889 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 07:12:44,006 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:13:04,166 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 07:13:04,272 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:13:24,399 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 07:13:24,512 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:13:44,693 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 07:13:44,808 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:14:05,000 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 07:14:05,108 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:14:25,205 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 07:14:25,309 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:14:45,411 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 07:14:45,527 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:15:05,708 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 07:15:05,823 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:15:25,916 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 07:15:26,032 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:15:46,173 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 07:15:46,276 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:16:06,445 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 07:16:06,559 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:16:26,717 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 07:16:26,833 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:16:46,952 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 07:16:47,067 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:17:07,171 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 07:17:07,277 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:17:27,444 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 07:17:27,560 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:17:47,719 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 07:17:47,828 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:18:08,000 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 07:18:08,111 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:18:28,271 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 07:18:28,382 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:18:48,481 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 07:18:48,588 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555217, 'timeout': 20}" and files "None"
+2024-11-17 07:19:05,999 - aiogram.dispatcher.dispatcher - INFO - Stop polling...
+2024-11-17 07:19:05,999 - aiogram - WARNING - Goodbye!
+2024-11-17 08:18:23,832 - asyncio - DEBUG - Using proactor: IocpProactor
+2024-11-17 08:18:23,834 - aiogram - DEBUG - Make request: "getMe" with data: "{}" and files "None"
+2024-11-17 08:18:24,083 - aiogram - DEBUG - Response for getMe: [200] "'{"ok":true,"result":{"id":7317252711,"is_bot":true,"first_name":"TeleBotToControlIntercom","username":"TeleBotToControlIntercombot","can_join_groups":true,"can_read_all_group_messages":false,"supports_inline_queries":false,"can_connect_to_business":false,"has_main_web_app":false}}'"
+2024-11-17 08:18:24,084 - aiogram - INFO - Bot: TeleBotToControlIntercom [@TeleBotToControlIntercombot]
+2024-11-17 08:18:24,084 - aiogram - DEBUG - Make request: "getWebhookInfo" with data: "{}" and files "None"
+2024-11-17 08:18:24,180 - aiogram - DEBUG - Response for getWebhookInfo: [200] "'{"ok":true,"result":{"url":"","has_custom_certificate":false,"pending_update_count":0}}'"
+2024-11-17 08:18:24,182 - aiogram - DEBUG - Make request: "deleteWebhook" with data: "{'drop_pending_updates': True}" and files "None"
+2024-11-17 08:18:24,288 - aiogram - DEBUG - Response for deleteWebhook: [200] "'{"ok":true,"result":true,"description":"Webhook is already deleted"}'"
+2024-11-17 08:18:24,289 - aiogram - WARNING - Updates were skipped successfully.
+2024-11-17 08:18:24,289 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2024-11-17 08:18:24,290 - aiogram - DEBUG - Make request: "getWebhookInfo" with data: "{}" and files "None"
+2024-11-17 08:18:24,371 - aiogram - DEBUG - Response for getWebhookInfo: [200] "'{"ok":true,"result":{"url":"","has_custom_certificate":false,"pending_update_count":0}}'"
+2024-11-17 08:18:24,372 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'timeout': 20}" and files "None"
+2024-11-17 08:18:39,496 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[{"update_id":250555217,\n"message":{"message_id":504,"from":{"id":2113637494,"is_bot":false,"first_name":"0xFk","username":"dxqxxx","language_code":"ru"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731831519,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}]}'"
+2024-11-17 08:18:39,497 - aiogram.dispatcher.dispatcher - DEBUG - Received 1 updates.
+2024-11-17 08:18:39,498 - aiogram - DEBUG - Make request: "sendMessage" with data: "{'chat_id': 2113637494, 'text': 'Добро пожаловать! Отправьте ваш контакт для авторизации.', 'reply_markup': '{"keyboard": [[{"text": "Отправить контакт", "request_contact": true}]], "resize_keyboard": true}'}" and files "None"
+2024-11-17 08:18:39,611 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555218, 'timeout': 20}" and files "None"
+2024-11-17 08:18:39,637 - aiogram - DEBUG - Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":505,"from":{"id":7317252711,"is_bot":true,"first_name":"TeleBotToControlIntercom","username":"TeleBotToControlIntercombot"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731831519,"text":"\\u0414\\u043e\\u0431\\u0440\\u043e \\u043f\\u043e\\u0436\\u0430\\u043b\\u043e\\u0432\\u0430\\u0442\\u044c! \\u041e\\u0442\\u043f\\u0440\\u0430\\u0432\\u044c\\u0442\\u0435 \\u0432\\u0430\\u0448 \\u043a\\u043e\\u043d\\u0442\\u0430\\u043a\\u0442 \\u0434\\u043b\\u044f \\u0430\\u0432\\u0442\\u043e\\u0440\\u0438\\u0437\\u0430\\u0446\\u0438\\u0438."}}'"
+2024-11-17 08:18:42,433 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[{"update_id":250555218,\n"message":{"message_id":506,"from":{"id":2113637494,"is_bot":false,"first_name":"0xFk","username":"dxqxxx","language_code":"ru"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731831522,"reply_to_message":{"message_id":505,"from":{"id":7317252711,"is_bot":true,"first_name":"TeleBotToControlIntercom","username":"TeleBotToControlIntercombot"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731831519,"text":"\\u0414\\u043e\\u0431\\u0440\\u043e \\u043f\\u043e\\u0436\\u0430\\u043b\\u043e\\u0432\\u0430\\u0442\\u044c! \\u041e\\u0442\\u043f\\u0440\\u0430\\u0432\\u044c\\u0442\\u0435 \\u0432\\u0430\\u0448 \\u043a\\u043e\\u043d\\u0442\\u0430\\u043a\\u0442 \\u0434\\u043b\\u044f \\u0430\\u0432\\u0442\\u043e\\u0440\\u0438\\u0437\\u0430\\u0446\\u0438\\u0438."},"contact":{"phone_number":"+79126991141","first_name":"0xFk","user_id":2113637494}}}]}'"
+2024-11-17 08:18:42,436 - aiogram.dispatcher.dispatcher - DEBUG - Received 1 updates.
+2024-11-17 08:18:42,439 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): domo-dev.profintel.ru:443
+2024-11-17 08:18:42,628 - urllib3.connectionpool - DEBUG - https://domo-dev.profintel.ru:443 "POST /tg-bot/check-tenant HTTP/1.1" 200 19
+2024-11-17 08:18:42,642 - aiogram - DEBUG - Make request: "sendMessage" with data: "{'chat_id': 2113637494, 'text': '🎉 *Авторизация успешна!* 🎉\n\n🆔 *Ваш tenant_id:* `22084`\n📞 *Номер телефона:* `79126991141`\n', 'parse_mode': 'Markdown', 'reply_markup': '{"keyboard": [[{"text": "Показать домофоны"}]], "resize_keyboard": true}'}" and files "None"
+2024-11-17 08:18:42,643 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555219, 'timeout': 20}" and files "None"
+2024-11-17 08:18:42,827 - aiogram - DEBUG - Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":507,"from":{"id":7317252711,"is_bot":true,"first_name":"TeleBotToControlIntercom","username":"TeleBotToControlIntercombot"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731831523,"text":"\\ud83c\\udf89 \\u0410\\u0432\\u0442\\u043e\\u0440\\u0438\\u0437\\u0430\\u0446\\u0438\\u044f \\u0443\\u0441\\u043f\\u0435\\u0448\\u043d\\u0430! \\ud83c\\udf89\\n\\n\\ud83c\\udd94 \\u0412\\u0430\\u0448 tenant_id: 22084\\n\\ud83d\\udcde \\u041d\\u043e\\u043c\\u0435\\u0440 \\u0442\\u0435\\u043b\\u0435\\u0444\\u043e\\u043d\\u0430: 79126991141","entities":[{"offset":3,"length":20,"type":"bold"},{"offset":31,"length":14,"type":"bold"},{"offset":46,"length":5,"type":"code"},{"offset":55,"length":15,"type":"bold"},{"offset":71,"length":11,"type":"code"}]}}'"
+2024-11-17 08:18:44,385 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[{"update_id":250555219,\n"message":{"message_id":508,"from":{"id":2113637494,"is_bot":false,"first_name":"0xFk","username":"dxqxxx","language_code":"ru"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731831524,"text":"\\u041f\\u043e\\u043a\\u0430\\u0437\\u0430\\u0442\\u044c \\u0434\\u043e\\u043c\\u043e\\u0444\\u043e\\u043d\\u044b"}}]}'"
+2024-11-17 08:18:44,387 - aiogram.dispatcher.dispatcher - DEBUG - Received 1 updates.
+2024-11-17 08:18:44,387 - handlers.apartament - INFO - [LIST_DOMOFONS] Обработчик вызван. Пользователь: dxqxxx
+2024-11-17 08:18:44,388 - handlers.apartament - DEBUG - [LIST_DOMOFONS] Tenant ID из message.bot: 22084
+2024-11-17 08:18:44,388 - handlers.apartament - INFO - [LIST_DOMOFONS] Отправляем запрос к API для tenant_id: 22084
+2024-11-17 08:18:44,391 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): domo-dev.profintel.ru:443
+2024-11-17 08:18:44,577 - urllib3.connectionpool - DEBUG - https://domo-dev.profintel.ru:443 "GET /tg-bot/domo.apartment?tenant_id=22084 HTTP/1.1" 200 1175
+2024-11-17 08:18:44,582 - handlers.apartament - DEBUG - [LIST_DOMOFONS] Ответ от API: [{'id': 757, 'name': '3', 'location': {'id': 755, 'fias_uuid': '9555c7f6-1487-45ac-b942-1c7df2ed9d42', 'readable_address': 'ул. Стахановская д. 43а', 'readable_address_lk': 'ул. Стахановская, дом 43', 'address_alias': None, 'porch': None, 'gate': None, 'floor': None, 'other': None, 'apartments_number': '3'}, 'paid_before': None, 'operation_status': 200, 'type': None, 'tenants': [{'id': 62, 'name': 'Пинаев Андрей Степанович', 'timezone': 'UTC+5', 'phone': '79088830608', 'alias_name': None, 'status': {'operation_status': 200, 'role': 100, 'displayed': True}}, {'id': 859, 'name': 'А', 'timezone': 'UTC+5', 'phone': '79827279691', 'alias_name': None, 'status': {'operation_status': 200, 'role': 300, 'displayed': True}}, {'id': 860, 'name': 'Анастасия ', 'timezone': 'UTC+5', 'phone': '79224477430', 'alias_name': None, 'status': {'operation_status': 200, 'role': 300, 'displayed': True}}, {'id': 22084, 'name': 'DoubleRR', 'timezone': None, 'phone': '79126991141', 'alias_name': None, 'status': {'operation_status': 200, 'role': 100, 'displayed': True}}, {'id': 22086, 'name': 'DoubleRR', 'timezone': None, 'phone': '79049818179', 'alias_name': None, 'status': {'operation_status': 200, 'role': 100, 'displayed': True}}]}]
+2024-11-17 08:18:44,584 - handlers.apartament - INFO - [LIST_DOMOFONS] Найдено 1 домофонов.
+2024-11-17 08:18:44,585 - aiogram - DEBUG - Make request: "sendMessage" with data: "{'chat_id': 2113637494, 'text': 'Выберите домофон:', 'reply_markup': '{"keyboard": [[{"text": "3"}]], "resize_keyboard": true}'}" and files "None"
+2024-11-17 08:18:44,587 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555220, 'timeout': 20}" and files "None"
+2024-11-17 08:18:44,690 - aiogram - DEBUG - Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":509,"from":{"id":7317252711,"is_bot":true,"first_name":"TeleBotToControlIntercom","username":"TeleBotToControlIntercombot"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731831524,"text":"\\u0412\\u044b\\u0431\\u0435\\u0440\\u0438\\u0442\\u0435 \\u0434\\u043e\\u043c\\u043e\\u0444\\u043e\\u043d:"}}'"
+2024-11-17 08:18:45,702 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[{"update_id":250555220,\n"message":{"message_id":510,"from":{"id":2113637494,"is_bot":false,"first_name":"0xFk","username":"dxqxxx","language_code":"ru"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731831525,"text":"3"}}]}'"
+2024-11-17 08:18:45,703 - aiogram.dispatcher.dispatcher - DEBUG - Received 1 updates.
+2024-11-17 08:18:45,706 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): domo-dev.profintel.ru:443
+2024-11-17 08:18:46,033 - urllib3.connectionpool - DEBUG - https://domo-dev.profintel.ru:443 "GET /tg-bot/domo.apartment/757/domofon?tenant_id=22084 HTTP/1.1" 200 6995
+2024-11-17 08:18:46,044 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): domo-dev.profintel.ru:443
+2024-11-17 08:18:46,326 - urllib3.connectionpool - DEBUG - https://domo-dev.profintel.ru:443 "POST /tg-bot/domo.domofon/urlsOnType?tenant_id=22084 HTTP/1.1" 200 236
+2024-11-17 08:18:46,330 - aiogram - DEBUG - Make request: "sendPhoto" with data: "{'chat_id': 2113637494, 'caption': 'Снимок с домофона Подъезд со стороны двора.', 'photo': 'https://cctv-streamer-12.profintel.ru/snapshot/image.jpg?st=hJFd6REH6rbcNZF_WQO__A&e=1732029526&id=11274'}" and files "{}"
+2024-11-17 08:18:46,331 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555221, 'timeout': 20}" and files "None"
+2024-11-17 08:18:46,418 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[{"update_id":250555221,\n"message":{"message_id":511,"from":{"id":2113637494,"is_bot":false,"first_name":"0xFk","username":"dxqxxx","language_code":"ru"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731831526,"text":"3"}}]}'"
+2024-11-17 08:18:46,419 - aiogram.dispatcher.dispatcher - DEBUG - Received 1 updates.
+2024-11-17 08:18:46,422 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): domo-dev.profintel.ru:443
+2024-11-17 08:18:46,757 - urllib3.connectionpool - DEBUG - https://domo-dev.profintel.ru:443 "GET /tg-bot/domo.apartment/757/domofon?tenant_id=22084 HTTP/1.1" 200 6995
+2024-11-17 08:18:46,768 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): domo-dev.profintel.ru:443
+2024-11-17 08:18:47,056 - urllib3.connectionpool - DEBUG - https://domo-dev.profintel.ru:443 "POST /tg-bot/domo.domofon/urlsOnType?tenant_id=22084 HTTP/1.1" 200 236
+2024-11-17 08:18:47,060 - aiogram - DEBUG - Make request: "sendPhoto" with data: "{'chat_id': 2113637494, 'caption': 'Снимок с домофона Подъезд со стороны двора.', 'photo': 'https://cctv-streamer-12.profintel.ru/snapshot/image.jpg?st=RwNUs_gcTzRjNTpEv8HVXQ&e=1732029527&id=11274'}" and files "{}"
+2024-11-17 08:18:47,062 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555222, 'timeout': 20}" and files "None"
+2024-11-17 08:18:47,474 - aiogram - DEBUG - Response for sendPhoto: [200] "'{"ok":true,"result":{"message_id":512,"from":{"id":7317252711,"is_bot":true,"first_name":"TeleBotToControlIntercom","username":"TeleBotToControlIntercombot"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731831527,"photo":[{"file_id":"AgACAgQAAxkDAAICAAFnOabn8quU_VQ0L6g86o9xQ8sCgwACcLYxGwQ21VHDgLkhuyIYDQEAAwIAA3MAAzYE","file_unique_id":"AQADcLYxGwQ21VF4","file_size":692,"width":90,"height":51},{"file_id":"AgACAgQAAxkDAAICAAFnOabn8quU_VQ0L6g86o9xQ8sCgwACcLYxGwQ21VHDgLkhuyIYDQEAAwIAA20AAzYE","file_unique_id":"AQADcLYxGwQ21VFy","file_size":8703,"width":320,"height":180},{"file_id":"AgACAgQAAxkDAAICAAFnOabn8quU_VQ0L6g86o9xQ8sCgwACcLYxGwQ21VHDgLkhuyIYDQEAAwIAA3gAAzYE","file_unique_id":"AQADcLYxGwQ21VF9","file_size":39491,"width":800,"height":450},{"file_id":"AgACAgQAAxkDAAICAAFnOabn8quU_VQ0L6g86o9xQ8sCgwACcLYxGwQ21VHDgLkhuyIYDQEAAwIAA3kAAzYE","file_unique_id":"AQADcLYxGwQ21VF-","file_size":40727,"width":1280,"height":720}],"caption":"\\u0421\\u043d\\u0438\\u043c\\u043e\\u043a \\u0441 \\u0434\\u043e\\u043c\\u043e\\u0444\\u043e\\u043d\\u0430 \\u041f\\u043e\\u0434\\u044a\\u0435\\u0437\\u0434 \\u0441\\u043e \\u0441\\u0442\\u043e\\u0440\\u043e\\u043d\\u044b \\u0434\\u0432\\u043e\\u0440\\u0430."}}'"
+2024-11-17 08:18:48,444 - aiogram - DEBUG - Response for sendPhoto: [200] "'{"ok":true,"result":{"message_id":513,"from":{"id":7317252711,"is_bot":true,"first_name":"TeleBotToControlIntercom","username":"TeleBotToControlIntercombot"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731831528,"photo":[{"file_id":"AgACAgQAAxkDAAICAWc5puj80vL2f-rGJpFC4A8HLfq6AAJVtjEbfezUUf4rJ0Mm0VVyAQADAgADcwADNgQ","file_unique_id":"AQADVbYxG33s1FF4","file_size":692,"width":90,"height":51},{"file_id":"AgACAgQAAxkDAAICAWc5puj80vL2f-rGJpFC4A8HLfq6AAJVtjEbfezUUf4rJ0Mm0VVyAQADAgADbQADNgQ","file_unique_id":"AQADVbYxG33s1FFy","file_size":8703,"width":320,"height":180},{"file_id":"AgACAgQAAxkDAAICAWc5puj80vL2f-rGJpFC4A8HLfq6AAJVtjEbfezUUf4rJ0Mm0VVyAQADAgADeAADNgQ","file_unique_id":"AQADVbYxG33s1FF9","file_size":39491,"width":800,"height":450},{"file_id":"AgACAgQAAxkDAAICAWc5puj80vL2f-rGJpFC4A8HLfq6AAJVtjEbfezUUf4rJ0Mm0VVyAQADAgADeQADNgQ","file_unique_id":"AQADVbYxG33s1FF-","file_size":40727,"width":1280,"height":720}],"caption":"\\u0421\\u043d\\u0438\\u043c\\u043e\\u043a \\u0441 \\u0434\\u043e\\u043c\\u043e\\u0444\\u043e\\u043d\\u0430 \\u041f\\u043e\\u0434\\u044a\\u0435\\u0437\\u0434 \\u0441\\u043e \\u0441\\u0442\\u043e\\u0440\\u043e\\u043d\\u044b \\u0434\\u0432\\u043e\\u0440\\u0430."}}'"
+2024-11-17 08:19:00,872 - aiogram.dispatcher.dispatcher - INFO - Stop polling...
+2024-11-17 08:19:00,873 - aiogram - WARNING - Goodbye!
+2024-11-17 08:47:30,609 - asyncio - DEBUG - Using proactor: IocpProactor
+2024-11-17 08:47:30,609 - aiogram - DEBUG - Make request: "getMe" with data: "{}" and files "None"
+2024-11-17 08:47:31,193 - aiogram - DEBUG - Response for getMe: [200] "'{"ok":true,"result":{"id":7317252711,"is_bot":true,"first_name":"TeleBotToControlIntercom","username":"TeleBotToControlIntercombot","can_join_groups":true,"can_read_all_group_messages":false,"supports_inline_queries":false,"can_connect_to_business":false,"has_main_web_app":false}}'"
+2024-11-17 08:47:31,193 - aiogram - INFO - Bot: TeleBotToControlIntercom [@TeleBotToControlIntercombot]
+2024-11-17 08:47:31,193 - aiogram - DEBUG - Make request: "getWebhookInfo" with data: "{}" and files "None"
+2024-11-17 08:47:31,298 - aiogram - DEBUG - Response for getWebhookInfo: [200] "'{"ok":true,"result":{"url":"","has_custom_certificate":false,"pending_update_count":0}}'"
+2024-11-17 08:47:31,298 - aiogram - DEBUG - Make request: "deleteWebhook" with data: "{'drop_pending_updates': True}" and files "None"
+2024-11-17 08:47:31,396 - aiogram - DEBUG - Response for deleteWebhook: [200] "'{"ok":true,"result":true,"description":"Webhook is already deleted"}'"
+2024-11-17 08:47:31,396 - aiogram - WARNING - Updates were skipped successfully.
+2024-11-17 08:47:31,396 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2024-11-17 08:47:31,396 - aiogram - DEBUG - Make request: "getWebhookInfo" with data: "{}" and files "None"
+2024-11-17 08:47:31,500 - aiogram - DEBUG - Response for getWebhookInfo: [200] "'{"ok":true,"result":{"url":"","has_custom_certificate":false,"pending_update_count":0}}'"
+2024-11-17 08:47:31,500 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'timeout': 20}" and files "None"
+2024-11-17 08:47:36,931 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[{"update_id":250555236,\n"message":{"message_id":542,"from":{"id":2113637494,"is_bot":false,"first_name":"0xFk","username":"dxqxxx","language_code":"ru"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731833257,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}]}'"
+2024-11-17 08:47:36,933 - aiogram.dispatcher.dispatcher - DEBUG - Received 1 updates.
+2024-11-17 08:47:36,935 - aiogram - DEBUG - Make request: "sendMessage" with data: "{'chat_id': 2113637494, 'text': 'Добро пожаловать! Отправьте ваш контакт для авторизации.', 'reply_markup': '{"keyboard": [[{"text": "Отправить контакт", "request_contact": true}]], "resize_keyboard": true}'}" and files "None"
+2024-11-17 08:47:37,049 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555237, 'timeout': 20}" and files "None"
+2024-11-17 08:47:37,060 - aiogram - DEBUG - Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":543,"from":{"id":7317252711,"is_bot":true,"first_name":"TeleBotToControlIntercom","username":"TeleBotToControlIntercombot"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731833257,"text":"\\u0414\\u043e\\u0431\\u0440\\u043e \\u043f\\u043e\\u0436\\u0430\\u043b\\u043e\\u0432\\u0430\\u0442\\u044c! \\u041e\\u0442\\u043f\\u0440\\u0430\\u0432\\u044c\\u0442\\u0435 \\u0432\\u0430\\u0448 \\u043a\\u043e\\u043d\\u0442\\u0430\\u043a\\u0442 \\u0434\\u043b\\u044f \\u0430\\u0432\\u0442\\u043e\\u0440\\u0438\\u0437\\u0430\\u0446\\u0438\\u0438."}}'"
+2024-11-17 08:47:41,130 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[{"update_id":250555237,\n"message":{"message_id":544,"from":{"id":2113637494,"is_bot":false,"first_name":"0xFk","username":"dxqxxx","language_code":"ru"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731833261,"reply_to_message":{"message_id":543,"from":{"id":7317252711,"is_bot":true,"first_name":"TeleBotToControlIntercom","username":"TeleBotToControlIntercombot"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731833257,"text":"\\u0414\\u043e\\u0431\\u0440\\u043e \\u043f\\u043e\\u0436\\u0430\\u043b\\u043e\\u0432\\u0430\\u0442\\u044c! \\u041e\\u0442\\u043f\\u0440\\u0430\\u0432\\u044c\\u0442\\u0435 \\u0432\\u0430\\u0448 \\u043a\\u043e\\u043d\\u0442\\u0430\\u043a\\u0442 \\u0434\\u043b\\u044f \\u0430\\u0432\\u0442\\u043e\\u0440\\u0438\\u0437\\u0430\\u0446\\u0438\\u0438."},"contact":{"phone_number":"+79126991141","first_name":"0xFk","user_id":2113637494}}}]}'"
+2024-11-17 08:47:41,133 - aiogram.dispatcher.dispatcher - DEBUG - Received 1 updates.
+2024-11-17 08:47:41,140 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): domo-dev.profintel.ru:443
+2024-11-17 08:47:41,540 - urllib3.connectionpool - DEBUG - https://domo-dev.profintel.ru:443 "POST /tg-bot/check-tenant HTTP/1.1" 200 19
+2024-11-17 08:47:41,592 - aiogram - DEBUG - Make request: "sendMessage" with data: "{'chat_id': 2113637494, 'text': '🎉 *Авторизация успешна!* 🎉\n\n🆔 *Ваш tenant_id:* `22084`\n📞 *Номер телефона:* `79126991141`\n', 'parse_mode': 'Markdown', 'reply_markup': '{"keyboard": [[{"text": "Показать домофоны"}]], "resize_keyboard": true}'}" and files "None"
+2024-11-17 08:47:41,599 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555238, 'timeout': 20}" and files "None"
+2024-11-17 08:47:41,744 - aiogram - DEBUG - Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":545,"from":{"id":7317252711,"is_bot":true,"first_name":"TeleBotToControlIntercom","username":"TeleBotToControlIntercombot"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731833261,"text":"\\ud83c\\udf89 \\u0410\\u0432\\u0442\\u043e\\u0440\\u0438\\u0437\\u0430\\u0446\\u0438\\u044f \\u0443\\u0441\\u043f\\u0435\\u0448\\u043d\\u0430! \\ud83c\\udf89\\n\\n\\ud83c\\udd94 \\u0412\\u0430\\u0448 tenant_id: 22084\\n\\ud83d\\udcde \\u041d\\u043e\\u043c\\u0435\\u0440 \\u0442\\u0435\\u043b\\u0435\\u0444\\u043e\\u043d\\u0430: 79126991141","entities":[{"offset":3,"length":20,"type":"bold"},{"offset":31,"length":14,"type":"bold"},{"offset":46,"length":5,"type":"code"},{"offset":55,"length":15,"type":"bold"},{"offset":71,"length":11,"type":"code"}]}}'"
+2024-11-17 08:47:42,894 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[{"update_id":250555238,\n"message":{"message_id":546,"from":{"id":2113637494,"is_bot":false,"first_name":"0xFk","username":"dxqxxx","language_code":"ru"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731833263,"text":"\\u041f\\u043e\\u043a\\u0430\\u0437\\u0430\\u0442\\u044c \\u0434\\u043e\\u043c\\u043e\\u0444\\u043e\\u043d\\u044b"}}]}'"
+2024-11-17 08:47:42,897 - aiogram.dispatcher.dispatcher - DEBUG - Received 1 updates.
+2024-11-17 08:47:42,898 - handlers.apartament - INFO - [LIST_DOMOFONS] Обработчик вызван. Пользователь: dxqxxx
+2024-11-17 08:47:42,899 - handlers.apartament - DEBUG - [LIST_DOMOFONS] Tenant ID из message.bot: 22084
+2024-11-17 08:47:42,900 - handlers.apartament - INFO - [LIST_DOMOFONS] Отправляем запрос к API для tenant_id: 22084
+2024-11-17 08:47:42,905 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): domo-dev.profintel.ru:443
+2024-11-17 08:47:43,179 - urllib3.connectionpool - DEBUG - https://domo-dev.profintel.ru:443 "GET /tg-bot/domo.apartment?tenant_id=22084 HTTP/1.1" 200 1175
+2024-11-17 08:47:43,185 - handlers.apartament - DEBUG - [LIST_DOMOFONS] Ответ от API: [{'id': 757, 'name': '3', 'location': {'id': 755, 'fias_uuid': '9555c7f6-1487-45ac-b942-1c7df2ed9d42', 'readable_address': 'ул. Стахановская д. 43а', 'readable_address_lk': 'ул. Стахановская, дом 43', 'address_alias': None, 'porch': None, 'gate': None, 'floor': None, 'other': None, 'apartments_number': '3'}, 'paid_before': None, 'operation_status': 200, 'type': None, 'tenants': [{'id': 62, 'name': 'Пинаев Андрей Степанович', 'timezone': 'UTC+5', 'phone': '79088830608', 'alias_name': None, 'status': {'operation_status': 200, 'role': 100, 'displayed': True}}, {'id': 859, 'name': 'А', 'timezone': 'UTC+5', 'phone': '79827279691', 'alias_name': None, 'status': {'operation_status': 200, 'role': 300, 'displayed': True}}, {'id': 860, 'name': 'Анастасия ', 'timezone': 'UTC+5', 'phone': '79224477430', 'alias_name': None, 'status': {'operation_status': 200, 'role': 300, 'displayed': True}}, {'id': 22084, 'name': 'DoubleRR', 'timezone': None, 'phone': '79126991141', 'alias_name': None, 'status': {'operation_status': 200, 'role': 100, 'displayed': True}}, {'id': 22086, 'name': 'DoubleRR', 'timezone': None, 'phone': '79049818179', 'alias_name': None, 'status': {'operation_status': 200, 'role': 100, 'displayed': True}}]}]
+2024-11-17 08:47:43,188 - handlers.apartament - INFO - [LIST_DOMOFONS] Найдено 1 домофонов.
+2024-11-17 08:47:43,189 - aiogram - DEBUG - Make request: "sendMessage" with data: "{'chat_id': 2113637494, 'text': 'Выберите домофон:', 'reply_markup': '{"keyboard": [[{"text": "3"}]], "resize_keyboard": true}'}" and files "None"
+2024-11-17 08:47:43,192 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555239, 'timeout': 20}" and files "None"
+2024-11-17 08:47:43,702 - aiogram - DEBUG - Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":547,"from":{"id":7317252711,"is_bot":true,"first_name":"TeleBotToControlIntercom","username":"TeleBotToControlIntercombot"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731833263,"text":"\\u0412\\u044b\\u0431\\u0435\\u0440\\u0438\\u0442\\u0435 \\u0434\\u043e\\u043c\\u043e\\u0444\\u043e\\u043d:"}}'"
+2024-11-17 08:47:44,613 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[{"update_id":250555239,\n"message":{"message_id":548,"from":{"id":2113637494,"is_bot":false,"first_name":"0xFk","username":"dxqxxx","language_code":"ru"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731833264,"text":"3"}}]}'"
+2024-11-17 08:47:44,615 - aiogram.dispatcher.dispatcher - DEBUG - Received 1 updates.
+2024-11-17 08:47:44,622 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): domo-dev.profintel.ru:443
+2024-11-17 08:47:45,225 - urllib3.connectionpool - DEBUG - https://domo-dev.profintel.ru:443 "GET /tg-bot/domo.apartment/757/domofon?tenant_id=22084 HTTP/1.1" 200 6995
+2024-11-17 08:47:45,247 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): domo-dev.profintel.ru:443
+2024-11-17 08:47:45,737 - urllib3.connectionpool - DEBUG - https://domo-dev.profintel.ru:443 "POST /tg-bot/domo.domofon/urlsOnType?tenant_id=22084 HTTP/1.1" 200 236
+2024-11-17 08:47:45,744 - aiogram - DEBUG - Make request: "sendPhoto" with data: "{'chat_id': 2113637494, 'caption': 'Снимок с домофона Подъезд со стороны двора.', 'photo': 'https://cctv-streamer-12.profintel.ru/snapshot/image.jpg?st=1ZaLrv0NXfZS3SkGLaS7yw&e=1732031265&id=11274'}" and files "{}"
+2024-11-17 08:47:45,747 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555240, 'timeout': 20}" and files "None"
+2024-11-17 08:47:47,069 - aiogram - DEBUG - Response for sendPhoto: [200] "'{"ok":true,"result":{"message_id":549,"from":{"id":7317252711,"is_bot":true,"first_name":"TeleBotToControlIntercom","username":"TeleBotToControlIntercombot"},"chat":{"id":2113637494,"first_name":"0xFk","username":"dxqxxx","type":"private"},"date":1731833267,"photo":[{"file_id":"AgACAgQAAxkDAAICJWc5rbPUUsf-m86Yn_ByzhdUT2hvAAIktjEb7LzVUXTZoz6B5L0GAQADAgADcwADNgQ","file_unique_id":"AQADJLYxG-y81VF4","file_size":695,"width":90,"height":51},{"file_id":"AgACAgQAAxkDAAICJWc5rbPUUsf-m86Yn_ByzhdUT2hvAAIktjEb7LzVUXTZoz6B5L0GAQADAgADbQADNgQ","file_unique_id":"AQADJLYxG-y81VFy","file_size":8629,"width":320,"height":180},{"file_id":"AgACAgQAAxkDAAICJWc5rbPUUsf-m86Yn_ByzhdUT2hvAAIktjEb7LzVUXTZoz6B5L0GAQADAgADeAADNgQ","file_unique_id":"AQADJLYxG-y81VF9","file_size":38821,"width":800,"height":450},{"file_id":"AgACAgQAAxkDAAICJWc5rbPUUsf-m86Yn_ByzhdUT2hvAAIktjEb7LzVUXTZoz6B5L0GAQADAgADeQADNgQ","file_unique_id":"AQADJLYxG-y81VF-","file_size":39705,"width":1280,"height":720}],"caption":"\\u0421\\u043d\\u0438\\u043c\\u043e\\u043a \\u0441 \\u0434\\u043e\\u043c\\u043e\\u0444\\u043e\\u043d\\u0430 \\u041f\\u043e\\u0434\\u044a\\u0435\\u0437\\u0434 \\u0441\\u043e \\u0441\\u0442\\u043e\\u0440\\u043e\\u043d\\u044b \\u0434\\u0432\\u043e\\u0440\\u0430."}}'"
+2024-11-17 08:48:05,912 - aiogram - DEBUG - Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-11-17 08:48:06,022 - aiogram - DEBUG - Make request: "getUpdates" with data: "{'offset': 250555240, 'timeout': 20}" and files "None"
+2024-11-17 08:48:12,282 - aiogram.dispatcher.dispatcher - INFO - Stop polling...
+2024-11-17 08:48:12,291 - aiogram - WARNING - Goodbye!

@@ -12,8 +12,8 @@
 ## Установка
 
 1. Установите зависимости: pip install -r requirements.txt
-
-2. Запустите бота: python main.py
+2. Проверьте установлен ли у вас docker !
+3. Запустите бота: python main.py
 
 
 ## Настройка
